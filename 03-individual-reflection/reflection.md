@@ -6,8 +6,8 @@
 
 - Họ và tên: Nguyễn Đình Tuấn Anh
 - Mã học viên: 2A202602735
-- Nhóm: Nhóm 02 (Lớp VinUni AI20k)
-- Candidate problem nhóm chọn: Tổng hợp thông báo & deadline học tập phân tán của khóa học VinUni AI (Canvas LMS, Microsoft Teams, Discord, Outlook, Zalo nhóm)
+- Nhóm: Nhóm AGI (Lớp K4B - Khóa AI VinUni)
+- Candidate problem nhóm chọn: Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất Action Items / Deadline từ các thông báo phân tán đa kênh (Discord nhiều channel, Email và GitHub) cho học viên khóa AI VinUni.
 
 ---
 

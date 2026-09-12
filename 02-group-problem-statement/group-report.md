@@ -6,14 +6,13 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò trong nhóm (VD: facilitator, workflow, research, writer) |
 |-----|-----------|-------------|---------------------------------------------------------------|
-| 1   | Nguyễn Đình Tuấn Anh | 2A202602735 | Facilitator (Trưởng nhóm điều phối) & Workflow Architect      |
-| 2   | Đỗ Minh Hoàng       | 2A202601142 | Researcher & Quick Validation Lead                            |
-| 3   | Trần Mai Linh       | 2A202603518 | Scribe / Writer & Problem Statement Lead                      |
-| 4   | Lê Quốc Huy         | 2A202602889 | Technical Evaluator (Rule / Workflow / Agent Comparison)      |
+| 1   | Châu Tùng Dương | 2A202602822 | Facilitator & Problem Owner (Điều phối, bảo vệ bài toán, chốt scope) |
+| 2   | Đỗ Mạnh Nghĩa | 2A202602971 | Workflow & Process Architect (Vẽ quy trình trước/sau, phân tích bottleneck) |
+| 3   | Nguyễn Đình Tuấn Anh | 2A202602735 | Research & Benchmark (Khảo sát thị trường, đối chiếu giải pháp hiện có) |
+| 4   | Hoàng Phong | 2A202602943 | Validation & Documentation (Thực hiện interview/survey, hoàn thiện báo cáo) |
 
 **Candidate problem nhóm chọn (1 câu):**
-
-Tổng hợp thông báo & deadline học tập phân tán từ các kênh của khóa học VinUni AI (Canvas LMS, Microsoft Teams, Discord môn học, Outlook, Zalo nhóm).
+Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất Action Items / Deadline từ các thông báo phân tán đa kênh (Discord nhiều channel, Email và GitHub) cho học viên khóa AI VinUni.
 
 ---
 
@@ -23,69 +22,65 @@ Tổng hợp thông báo & deadline học tập phân tán từ các kênh của
 
 | # | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh của nhóm |
 |---|---|---|---|---|---|
-| 1 | Tuấn Anh | Tổng hợp thông báo & deadline phân tán khóa học VinUni AI | Học viên khóa học AI tại VinUni | Đọc quét các đoạn chat dài trên Discord/Zalo để nhặt deadline (mất 20-25 phút). | Rất thiết thực, ai trong nhóm cũng đang bị ngợp vì quá nhiều kênh. |
-| 2 | Tuấn Anh | Quản lý, phân loại chi tiêu cá nhân từ 3 app ngân hàng | Sinh viên sống cùng gia đình, tự quản lý chi tiêu | Nhập liệu thủ công từng giao dịch nhỏ từ MBBank, Techcom, VCB (35 phút). | Nỗi đau thật nhưng mang tính cá nhân, ít liên quan đến bối cảnh khóa học. |
-| 3 | Tuấn Anh | Thu thập, tóm tắt tin tức AI từ Facebook và TikTok | Học viên AI cần cập nhật kỹ thuật | Đọc thẩm định lọc bỏ video/bài viết giật tít 30s để tìm code thật (35 phút). | Hay nhưng tiêu chí "tin thực chiến" khó định lượng trong phạm vi lab. |
-| 4 | Minh Hoàng | Tự động review code và kiểm tra chuẩn clean code đồ án | Thành viên nhóm làm đồ án lập trình | Đọc dò từng pull request và kiểm tra convention đặt tên hàm (45 phút). | Hấp dẫn nhưng phạm vi quá rộng, dễ bị ảo tưởng về khả năng bắt lỗi logic của AI. |
-| 5 | Minh Hoàng | Tìm kiếm tài liệu bài lab bị phân tán trên Google Drive | Học viên khi làm bài tập lớn | Mò lại các thư mục Drive chia sẻ không có cấu trúc chuẩn (25 phút). | Có thể giải quyết bằng cách tổ chức lại thư mục Drive, chưa cần đến AI. |
-| 6 | Minh Hoàng | Quản lý tiến độ task sprint trong nhóm làm đồ án | Trưởng nhóm đồ án môn học | Nhắn tin giục từng bạn cập nhật tiến độ vào Trello/Jira (30 phút). | Nỗi đau thật về quản lý nhóm nhưng khó ép các bạn phản hồi đúng hạn bằng AI. |
-| 7 | Mai Linh | Tóm tắt slide bài giảng và tài liệu kỹ thuật tiếng Anh dài | Học viên trước buổi học lý thuyết | Đọc 60-80 trang slide tiếng Anh ngập tràn thuật ngữ (90 phút). | Rất phổ biến nhưng hiện tại sinh viên đã dùng sẵn ChatGPT/Claude để paste tài liệu. |
-| 8 | Mai Linh | Tra cứu lời giải đáp thắc mắc cũ của TA trên Discord | Học viên khi làm lab gặp bug | Search keyword trên Discord bị trôi giữa hàng trăm tin nhắn chat (20 phút). | Điểm nghẽn rất thật, có thể tích hợp chung vào bài toán thông báo Discord. |
-| 9 | Mai Linh | Đối chiếu tiêu chí chấm điểm (Rubric) với bài nộp | Học viên trước giờ bấm submit bài lab | Đọc dò từng tiêu chí PDF với notebook để tránh bị trừ điểm (35 phút). | Rõ ràng, đo lường được nhưng tần suất chỉ xảy ra 1-2 lần/tuần trước deadline. |
-| 10 | Quốc Huy | Giải mã stack trace và debug lỗi thư viện CUDA/PyTorch | Học viên làm lab AI thực hành | Copy log lỗi dài 100 dòng tìm kiếm trên StackOverflow (40 phút). | Rất nhức nhối khi train model nhưng phụ thuộc nhiều vào phần cứng máy cá nhân. |
-| 11 | Quốc Huy | Tự động ghi chép meeting notes và tóm tắt cuộc họp nhóm | Cả nhóm đồ án môn học | Ngồi nghe lại file ghi âm và gõ lại ai làm gì sau cuộc họp (30 phút). | Hiện đã có nhiều tool meeting có sẵn như Teams recap, Otter.ai. |
-| 12 | Quốc Huy | Nhắc hẹn nộp bài tập tự động cho các thành viên trong nhóm | Trưởng nhóm đồ án | Canh giờ deadline để tag tên nhắc từng bạn nộp phần làm (15 phút). | Giải quyết được bằng bot nhắc hẹn đơn giản hoặc Google Calendar reminder. |
+| 1 | Châu Tùng Dương | Bị miss thông tin quan trọng (deadline nộp lab, link Zoom) do thông báo rải rác trên Discord, Email, GitHub | Học viên khóa AI VinUni (gần 1000 học viên) | Phải lội tin nhắn thủ công trên 4-5 channels và mail; mất 20-30'/ngày | Cực kỳ nhức nhối, cả nhóm và cả lớp đều đang chịu trận mỗi ngày |
+| 2 | Châu Tùng Dương | Tóm tắt Action Items và quyết định kỹ thuật sau buổi họp Google Meet đồ án tốt nghiệp KMA | Trưởng nhóm, thành viên làm đồ án | Nghe lại audio/ghi chú nháp lúc đêm muộn để viết biên bản task | Rất thật, workflow rõ, nhưng phạm vi hơi hẹp cho nhóm làm đồ án |
+| 3 | Châu Tùng Dương | Tóm tắt slide lý thuyết VLearn (40-50 trang) thành Cheat-sheet để làm lab chiều | Học viên khóa AI VinUni | Lật từng trang slide tìm lại công thức/khái niệm khi làm lab | Khá hữu ích, nhưng học viên vẫn có thể tự mở 2 màn hình xem slide |
+| 4 | Đỗ Mạnh Nghĩa | Khó tìm kiếm lại các quyết định kỹ thuật cũ bị trôi trên Slack/Discord | Developer trong dự án, học viên | Thanh search của chat chỉ khớp keyword cứng, không hiểu ngữ cảnh | Pain thật nhưng việc lấy quyền truy cập dữ liệu chat cũ khá phức tạp |
+| 5 | Đỗ Mạnh Nghĩa | Hay quên deadline nộp bài tập lab do không có hệ thống nhắc việc tự động | Học viên hay bị phân tâm | Phải tự ghi chép thủ công vào lịch cá nhân, hay bị sót | Rule đơn giản (Google Calendar) có thể giải quyết được 80% |
+| 6 | Đỗ Mạnh Nghĩa | Review và tóm tắt Pull Request dài trên GitHub khi làm bài tập nhóm | Học viên review code, team lead | Đọc từng file code diff để hiểu toàn bộ thay đổi của thành viên | Bài tập Day 2 và các lab đầu khóa chủ yếu là Markdown, chưa nhiều code diff |
+| 7 | Nguyễn Đình Tuấn Anh | Tổng hợp Weekly Report tiến độ đồ án từ Git commit log và board Trello | Sinh viên năm cuối làm đồ án | Viết narrative kết nối các commit kỹ thuật thành báo cáo học thuật | Workflow rất chuẩn, nhưng hơi trùng lặp với ví dụ mẫu trong Worksheet |
+| 8 | Nguyễn Đình Tuấn Anh | Hòm thư sinh viên bị quá tải bởi các email thông báo spam từ trường học | Sinh viên đại học | Mất thời gian đọc tiêu đề để lọc xem email nào thực sự cần xử lý | Tính năng Filter & Tag có sẵn của Gmail đã giải quyết tương đối tốt |
+| 9 | Hoàng Phong | Soạn thảo biên bản họp và phân chia công việc cho Câu lạc bộ sinh viên | Ban chủ nhiệm CLB | Vừa điều phối vừa ghi chép, biên bản hay bị thiếu người nhận việc | Tần suất thấp (chỉ họp 1 lần/tuần), không cấp bách bằng việc học hàng ngày |
+| 10 | Hoàng Phong | Tìm kiếm và gợi ý paper học thuật phù hợp cho đề tài nghiên cứu tốt nghiệp | Sinh viên làm khóa luận | Đọc lướt hàng chục bài báo tiếng Anh nhưng độ liên quan thấp | Bài toán quá rộng, khó đánh giá độ chính xác (Ground Truth) trong buổi lab |
 
 ### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A. Quản lý thông báo, deadline và lập kế hoạch | #1 (Deadline VinUni), #6 (Tiến độ sprint), #12 (Nhắc deadline nhóm) | Gom thông tin và mốc thời gian từ nhiều nguồn để không bị trễ hạn nộp bài. | Cụm có tính cấp bách cao nhất, ảnh hưởng trực tiếp đến điểm số học tập của cả nhóm. |
-| B. Khai phá, tra cứu tài liệu và tin tức | #3 (Tin tức AI), #5 (Tìm tài liệu Drive), #7 (Tóm tắt slide), #8 (Tra cứu TA Discord) | Đọc hiểu và trích xuất thông tin trọng tâm từ văn bản dài hoặc kho dữ liệu phân tán. | Các công cụ LLM hiện tại đã làm khá tốt ở mức prompt cơ bản. |
-| C. Hỗ trợ lập trình, debug và review code | #4 (Review code đồ án), #10 (Debug CUDA/PyTorch) | Hỗ trợ các tác vụ kỹ thuật trong quá trình viết mã nguồn và làm bài lab. | Rủi ro kỹ thuật cao, phạm vi quá rộng để giải quyết trọn vẹn trong một buổi lab 4 tiếng. |
-| D. Năng suất cá nhân và sinh hoạt | #2 (Chi tiêu ngân hàng), #9 (Check Rubric), #11 (Meeting notes) | Tự động hóa các tác vụ lặp lại trong đời sống và học tập cá nhân. | Mức độ ưu tiên thấp hơn các bài toán phục vụ trực tiếp khóa học hiện tại. |
+| A. Quản lý & Lọc thông báo đa kênh | #1, #5, #8 | Tiếp nhận thông tin từ nhiều nguồn rời rạc, cần lọc ra thông tin quan trọng có chứa hành động cần làm | Pain point xảy ra hàng ngày, tần suất cao nhất, ảnh hưởng diện rộng |
+| B. Trích xuất Action Items cuộc họp | #2, #9 | Chuyển đổi dữ liệu âm thanh/hội thoại trao đổi tự do thành biên bản có cấu trúc và phân công nhiệm vụ | Có bottleneck rõ ràng, dễ đo lường bằng thời gian soạn thảo |
+| C. Tóm tắt & Tra cứu tài liệu học tập | #3, #4, #10 | Tìm kiếm ngữ nghĩa và cô đọng tài liệu dài (slide, paper, chat history) thành kiến thức ngắn gọn | Cần AI đọc hiểu tốt, nhưng rủi ro hallucination cần kiểm soát kỹ |
+| D. Báo cáo tiến độ & Code Review | #6, #7 | Tổng hợp dữ liệu kỹ thuật (Git, Trello, PR) thành văn bản tóm tắt cho người khác review | Workflow rõ ràng nhưng hơi phụ thuộc vào công cụ của bên thứ ba |
 
 ### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
 
 | Candidate | Vì sao vào shortlist (2-3 ý) | Rủi ro / điều chưa rõ |
 |---|---|---|
-| Candidate #1: Tổng hợp deadline phân tán khóa học VinUni AI | 1. Actor là chính các thành viên trong nhóm, workflow hiện tại diễn ra hàng tuần.<br>2. Bottleneck rất rõ: đọc quét tin nhắn Discord/Zalo tốn 20-25 phút.<br>3. Dữ liệu text thông báo có sẵn, impact giảm từ 45' xuống 8' đo lường được ngay. | Cách xử lý tin nhắn tự do có chứa viết tắt/teencode của TA và quy định bảo mật riêng tư. |
-| Candidate #4: Review code đồ án tự động | 1. Đồ án môn học yêu cầu code chất lượng cao, review chéo mất nhiều thời gian.<br>2. AI có thế mạnh đọc hiểu code syntax và convention. | Rất khó để AI phát hiện lỗi logic nghiệp vụ chuyên sâu; nguy cơ tạo ra code giả (hallucination) gây lỗi runtime. |
-| Candidate #10: Debug lỗi thư viện CUDA/PyTorch | 1. Lỗi môi trường xảy ra thường xuyên khi bắt đầu bài lab AI mới.<br>2. Tiết kiệm thời gian mò mẫm trên diễn đàn. | Lỗi phụ thuộc quá nhiều vào phiên bản driver GPU, OS của từng máy học viên; khó tạo ra giải pháp dùng chung ổn định. |
+| **Candidate 1: Miss thông báo quan trọng trên Discord/Email/GitHub** (Đề xuất bởi C.T.Dương) | 1. Actor cực kỳ rõ và có sẵn ngay tại lớp (gần 1000 học viên).<br>2. Pain point diễn ra đều đặn 3 lần/ngày; đo được chính xác bằng phút (20-30') và số lần miss deadline.<br>3. Kiểm chứng được ngay lập tức bằng khảo sát thật tại lớp. | Phạm vi tích hợp API đa nền tảng có thể bị phình to nếu không giới hạn rõ boundary ở mức AI Workflow xử lý text nguồn. |
+| **Candidate 2: Trích xuất Action Items sau họp Google Meet đồ án** (Đề xuất bởi C.T.Dương) | 1. Workflow lặp lại hàng tuần (2-3 lần), bottleneck rất rõ ở khâu nghe lại audio.<br>2. Giảm trực tiếp thời gian soạn biên bản từ 30' xuống dưới 5'. | Độ chính xác của transcript tiếng Việt cho các thuật ngữ chuyên ngành mật mã/CNTT chưa chắc chắn. |
+| **Candidate 7: Tổng hợp Weekly Report đồ án từ Git/Trello** (Đề xuất bởi N.Đ.Tuấn Anh) | 1. Workflow kinh điển, dữ liệu đầu vào có cấu trúc rõ (Git commits, Trello cards).<br>2. Đo lường được bằng thời gian hoàn thành báo cáo. | Quá giống với bài Worked Example mẫu trong Worksheet; cả nhóm muốn giải một bài toán mới và sát sườn hơn. |
 
 ### 3.4. Score để đồng thuận (chấm 1-5, ép nói rõ vì sao cho 5 / cho 3)
 
 | Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Candidate #1: Deadline phân tán VinUni AI | 5 | 5 | 5 | 5 | 5 | 5 | 5 | **35** |
-| Candidate #4: Review code đồ án | 4 | 4 | 4 | 3 | 3 | 4 | 4 | **26** |
-| Candidate #10: Debug lỗi CUDA/PyTorch | 4 | 3 | 5 | 4 | 3 | 4 | 5 | **28** |
-
-*Giải thích điểm số Candidate #1:* Cho điểm 5 ở tất cả các cột vì: Actor là chính sinh viên trong lớp; workflow 6 bước bấm giờ rõ từng phút; pain có quote và bằng chứng thật; impact đo bằng phút giảm rõ ràng; hoàn toàn khả thi làm trong lab với dữ liệu text; so sánh rành mạch được giữa Rule, Workflow và Agent; cả 4 thành viên đều hiểu tường tận domain học tập này.
+| **Candidate 1 (Miss thông báo đa kênh)** | 5 | 5 | 5 | 5 | 5 | 5 | 5 | **35** |
+| **Candidate 2 (Action Items họp Meet)** | 5 | 4 | 4 | 4 | 4 | 4 | 4 | **29** |
+| **Candidate 7 (Weekly Report đồ án)** | 4 | 4 | 4 | 4 | 4 | 4 | 3 | **27** |
 
 **Candidate nhóm chọn (1 bài duy nhất):**
 
 ```text
-Candidate #1 — Tổng hợp thông báo & deadline học tập phân tán từ các kênh của khóa học VinUni AI (Canvas LMS, Microsoft Teams, Discord môn học, Outlook, Zalo nhóm).
+Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất Action Items / Deadline từ các thông báo phân tán đa kênh (Discord nhiều channel, Email và GitHub) cho học viên khóa AI VinUni.
 ```
 
 **Vì sao chọn (4-5 câu):**
 
 ```text
-Cả nhóm đạt được sự đồng thuận tuyệt đối khi chọn bài toán này vì đây là nỗi đau hiện hữu hàng ngày của toàn bộ học viên trong khóa học VinUni AI. Khóa học có cường độ rất nhanh, lượng thông tin dồn dập trải dài trên nhiều nền tảng khiến ai cũng mất gần 1 tiếng đầu tuần để rà soát và luôn sống trong nỗi lo bị sót bài quiz hay lab report. Quy trình hiện tại có thể bóc tách thành các bước với số phút bấm giờ cụ thể, trong đó bước nghẽn đọc quét tin nhắn chat là điểm AI có thể hỗ trợ trích xuất tốt nhất. Hơn nữa, bài toán có đầu vào là văn bản thông báo có sẵn, ranh giới can thiệp rõ ràng và cho phép so sánh rành mạch giữa No AI, Rule, Workflow và Agent mà không vượt quá phạm vi triển khai của buổi lab.
+Bài toán đạt điểm tối đa (35/35) trên cả 7 tiêu chí đánh giá vì đây là vấn đề "sống còn" diễn ra mỗi ngày của chính 4 thành viên trong nhóm và gần 1000 bạn học cùng khóa. Workflow hiện tại có điểm nghẽn rất rõ ràng (mất 20-30 phút/ngày lội tin nhắn thủ công) và để lại hậu quả đo đếm được (nộp trễ bài lab, vào nhầm link Zoom workshop). Nhóm có lợi thế tuyệt đối khi sở hữu sẵn tập người dùng thật ngay tại chỗ để phỏng vấn, khảo sát lấy số liệu kiểm chứng chỉ trong 10 phút. Quan trọng nhất, bài toán cho phép so sánh rạch ròi giữa Rule (lọc từ khóa), AI Workflow (bóc tách ngữ cảnh) và Agent (tự động hóa hoàn toàn), hoàn toàn vừa vặn để giải quyết triệt để trong khuôn khổ buổi lab 4 tiếng.
 ```
 
 **Vì sao KHÔNG chọn các candidate còn lại (mỗi bài 2-3 câu):**
 
 ```text
-- Với bài toán Review code đồ án (#4): Nhóm không chọn vì ranh giới bài toán quá rộng, việc đánh giá chất lượng code phụ thuộc nhiều vào logic thuật toán của từng bài toán cụ thể; nếu AI gợi ý sai có thể phá vỡ cả luồng xử lý của bài lab, rủi ro cao hơn giá trị mang lại.
-- Với bài toán Debug lỗi CUDA/PyTorch (#10): Nhóm không chọn vì môi trường phần cứng và phiên bản thư viện của mỗi máy học viên quá phân mảnh; việc xây dựng một giải pháp giải quyết lỗi cục bộ rất khó chuẩn hóa và không thể hoàn thành kiểm chứng trong khuôn khổ buổi lab.
+- Không chọn Candidate 2 (Action Items họp Meet): Mặc dù pain point có thật, nhưng việc kiểm chứng phụ thuộc vào lịch họp đột xuất của nhóm KMA vào buổi tối, không thể kiểm chứng trực tiếp ngay trên lớp học; đồng thời phụ thuộc nhiều vào chất lượng công cụ Speech-to-Text bên ngoài.
+- Không chọn Candidate 7 (Weekly Report đồ án): Bài toán này có cấu trúc tương tự 90% với Worked Example trong tài liệu hướng dẫn, nếu chọn sẽ làm giảm tính sáng tạo và không mang lại giá trị giải quyết bức xúc thực tế hàng ngày cho cả nhóm trong khóa học hiện tại.
 ```
 
 **Disagreement (nếu có — ai lo gì, chốt ra sao):**
 
 ```text
-Trong buổi thảo luận, bạn Quốc Huy và Minh Hoàng từng đề xuất xây dựng một AI Agent tự trị hoàn toàn: Agent sẽ tự động đăng nhập vào tài khoản cá nhân, cào tin nhắn Discord/Zalo và tự add sự kiện vào Google Calendar cho ngầu. Bạn Tuấn Anh đã phản biện kịch liệt: việc để AI truy cập tài khoản cá nhân tiềm ẩn rủi ro lộ lọt thông tin riêng tư nghiêm trọng, đồng thời nếu Agent bị ảo giác ngày tháng mà tự ý ghi đè vào lịch thì học viên sẽ bị trễ bài nộp và mất điểm môn học. Nhóm đi đến thống nhất (chốt): Hạ cấp kiến trúc từ Agent xuống Workflow an toàn — chỉ xử lý các văn bản thông báo mà học viên chủ động cung cấp, và bắt buộc phải có bước con người kiểm duyệt bảng xem trước (Human boundary) trước khi đồng bộ sang lịch.
+Thành viên Đỗ Mạnh Nghĩa lo ngại rằng việc kết nối trực tiếp vào bot Discord và Gmail API sẽ gặp rào cản về bảo mật, quyền riêng tư và thời gian thiết lập kỹ thuật quá dài cho một buổi lab. Nhóm đã thảo luận và thống nhất chốt boundary chặt chẽ: Ở phạm vi lab này, nhóm không xây dựng bot can thiệp hệ thống phức tạp mà thiết kế một AI Workflow nhận dữ liệu đầu vào là các đoạn text thông báo được xuất/copy từ các kênh, AI tập trung xử lý trích xuất Entity (Deadline, Link, Action) và xuất ra Daily Digest kèm link gốc để con người đối soát.
 ```
 
 ---
@@ -96,30 +91,30 @@ Trong buổi thảo luận, bạn Quốc Huy và Minh Hoàng từng đề xuất
 
 | Nguồn | Số người / mẫu | Tín hiệu xác nhận (kèm quote nguyên văn) | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Interview | 3 học viên lớp VinUni AI | - "Tuần nào tao cũng phải mở 4-5 tab lướt mỏi tay, có đợt suýt toang bài quiz 5% vì TA nhắn cập nhật deadline trong channel Discord trôi mất tiêu."<br>- "Canvas có lịch nhưng thầy cô hay dặn thêm bài đọc trên Teams hoặc Zalo nhóm, không check hết là coi như thiếu." | Có 1 bạn bảo: "Tao chỉ cần bookmark lại tab Canvas là đủ, cần gì làm tool phức tạp." | Nhận ra pain thật không nằm ở Canvas mà nằm ở các kênh trao đổi tự do (Discord/Zalo) - nơi thông báo bị chìm trong tin nhắn chat. Nhóm thu hẹp trọng tâm vào việc bóc tách tin nhắn chat. |
-| Survey / poll | 6 học viên cùng lớp | 6/6 bạn (100%) xác nhận phải dùng từ 3 kênh trở lên để theo dõi việc học; 5/6 bạn (83%) từng ít nhất 1 lần bị nộp muộn hoặc quên task nhỏ do không đọc kịp tin nhắn. | 2 bạn lo ngại việc cấp quyền tài khoản Discord/Zalo cho bot ngoài vì sợ lộ dữ liệu nhóm chat. | Bổ sung ranh giới an toàn: Giải pháp không yêu cầu cấp quyền đọc trộm tin nhắn cá nhân; người dùng chỉ cần copy đoạn thông báo cần bóc tách hoặc forward vào bot. |
-| Log / ticket / review (nếu có) | 1 kênh Discord môn học | Quan sát thấy có trung bình 8-12 câu hỏi của sinh viên/tuần hỏi lại TA kiểu: "Deadline bài lab này nộp lúc mấy giờ thế ạ?", "Nộp bài trên Canvas hay Teams ạ?". | Không có phản bác. | Khẳng định việc thông báo bị trôi là có thật và lặp đi lặp lại hàng tuần. |
+| Interview | 3 bạn học viên lớp K4B | - Bạn Nam (K4B): *"Hôm thứ Tư tao suýt trễ nộp Lab 1 vì đinh ninh hạn chót là 18h như hôm trước, ai ngờ thầy thông báo đổi thành 17h trong một tin nhắn reply ở Discord mà tao không để ý."*<br>- Bạn Mai (K4B): *"Sáng nào mở mắt ra cũng hoang mang vì không biết link Zoom hôm nay gửi qua mail hay ghim ở Discord. Lội 4 channels mất cả 15 phút vẫn sợ vào nhầm phòng."*<br>- Bạn Tuấn (K4B): *"Thông báo quan trọng hay bị trôi mất vì các bạn chat hỏi đáp và thả meme quá nhiều trong channel chung."* | Bạn Đức (K4B): *"Tao bật thông báo điện thoại nên ai nhắn gì cũng biết ngay, không thấy bị miss."* (Tuy nhiên bạn thừa nhận bị chuông báo làm phiền cả ngày nên thường xuyên phải bấm Mute channel). | Nhận ra vấn đề không phải là "thiếu kênh thông báo", mà là học viên bị "ngộ độc thông tin" (Information Overload), cần một cơ chế phân loại tin nhắn rác/thảo luận với tin nhắn có "Hành động / Deadline bắt buộc". |
+| Survey / poll | 12 học viên trong lớp K4B | - 10/12 bạn (83.3%) xác nhận mất từ 20-30 phút/ngày chỉ để kiểm tra các kênh thông báo.<br>- 8/12 bạn (66.7%) từng ít nhất 1 lần bị lỡ thông tin (link Zoom, deadline đổi, repo mới).<br>- 12/12 bạn (100%) mong muốn có một bản tóm tắt 3 dòng mỗi sáng/tối. | 2/12 bạn (16.7%) cho rằng chỉ cần giảng viên ghim tin nhắn (Pin) là đủ, không cần công cụ gì mới. | Nhóm bổ sung boundary: AI Workflow chỉ xử lý thông báo công khai trong các kênh chính thống, không can thiệp tin nhắn riêng tư, và phải luôn dẫn link gốc về tin nhắn đã ghim để học viên bấm vào xem ngay. |
+| Log / ticket / review (nếu có) | Quan sát thực tế channel Discord lớp | Trong 3 ngày đầu khóa học, có ít nhất 15 câu hỏi của học viên hỏi lại về: *"Hôm nay học link Zoom nào ạ?"*, *"Hạn nộp bài lab mấy giờ thế mọi người?"* ngay sau khi thông báo đã được đăng trước đó vài tiếng. | Không có phản bác. | Chứng minh rõ ràng: Kênh thông báo hiện tại đang thất bại trong việc truyền tải thông tin hành động tới người học. |
 
 **Insight sau validation (1-2 câu — pain thật nằm ở đâu):**
 
 ```text
-Pain thật không nằm ở việc học viên thiếu ứng dụng lịch (ai cũng có Google Calendar), mà nằm ở việc thông tin bài tập bị phân mảnh và chìm nghỉm trong các đoạn hội thoại tự do trên Discord và Zalo; học viên tốn nhiều công sức nhất ở bước "đọc quét và suy đoán đâu là hạn chót thật".
+Pain thật không nằm ở việc học viên lười đọc, mà nằm ở việc thông tin hành động quan trọng (Deadline, Link Zoom, Đổi yêu cầu) bị pha loãng và chìm nghỉm giữa hàng trăm tin nhắn thảo luận và các thread con trên Discord. Giải pháp cần giải quyết đúng nút thắt: Tách biệt hoàn toàn tín hiệu quan trọng (Signal) ra khỏi tạp âm thảo luận (Noise) và cô đọng thành dạng checklist hành động.
 ```
 
-Bằng chứng đính kèm (nếu có): `02-group-problem-statement-survey.png`, `02-group-problem-statement-interview-notes.md`
+Bằng chứng đính kèm (nếu có): Ghi nhận từ phỏng vấn trực tiếp 3 học viên K4B và khảo sát nhanh tại bàn học chiều ngày 12/09/2026.
 
 ### 4.2. Research giải pháp đã có (ít nhất 2-3 tools/patterns + 1-2 link kiểm được)
 
 | Nguồn / tool / case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| Canvas Calendar Feed (iCal Sync) | https://community.canvaslms.com/t5/Canvas-Basics-Guide/How-do-I-view-the-Calendar-iCal-feed-to-subscribe-to-an-external/ta-p/44 | Đồng bộ tự động các bài tập chính thức từ Canvas sang Google Calendar / Apple Calendar. | Tự động, chính xác 100% với các bài tập đã tạo sẵn trên hệ thống Canvas LMS. | Hoàn toàn mù tịt trước các thông báo phát sinh, thay đổi giờ nộp hoặc bài tập dặn dò qua Discord, Teams, Zalo. | Tận dụng cơ chế feed có sẵn cho Canvas, không cố làm lại phần Canvas đã làm tốt. |
-| Zapier / Make.com Webhook | https://zapier.com/apps/discord/integrations/google-calendar | Tự động bắt sự kiện tin nhắn mới từ Discord để tạo event trên Google Calendar. | Kết nối đa nền tảng mạnh mẽ, chạy ngầm ổn định. | Chỉ lọc theo trigger thô (từ khóa đơn giản), không hiểu được ngữ cảnh ngôn ngữ tự nhiên tiếng Việt; dễ tạo ra hàng loạt event rác trên lịch nếu tin nhắn không phải là deadline. | Cần tầng xử lý ngôn ngữ tự nhiên (LLM) để trích xuất đúng thực thể thay vì chỉ dùng Rule lọc từ khóa. |
-| Notion AI / Task Database | https://www.notion.so/product/ai | Quản lý bảng To-do list và hỗ trợ autofill thuộc tính hạn chót từ văn bản. | Giao diện quản lý công việc đẹp, trực quan, tùy biến cao. | Vẫn bắt buộc người dùng phải copy-paste thủ công từng đoạn text vào trang Notion và tự căn chỉnh ngày giờ. | Cần tạo luồng input thuận tiện nhất cho người dùng (one-click copy/paste) và tự động chuẩn hóa định dạng JSON. |
+| Discord Native Notifications & Mentions | [discord.com/safety](https://discord.com) | Bắn thông báo đẩy khi có tin nhắn mới hoặc được tag @everyone / @here | Có sẵn, thời gian thực, không tốn phí | Bắn chuông vô tội vạ khiến người dùng bị mệt mỏi và bấm "Mute"; hoàn toàn bỏ sót các thông báo dặn dò không tag tên của Giảng viên/Coach | Không dựa vào cơ chế notification đẩy của Discord; cần gom nhóm và xử lý theo đợt (Batch digest). |
+| Zapier / Make (Automation Workflow) | [zapier.com/apps/discord/integrations](https://zapier.com) | Bắt sự kiện có tin nhắn mới trong channel và chuyển tiếp về Google Sheet hoặc gửi Email | Tự động hóa kết nối đa nền tảng theo Rule cứng rất ổn định | Không có khả năng hiểu ngữ nghĩa tiếng Việt tự nhiên; không tự bóc tách được ngày giờ nếu giảng viên gõ linh hoạt (ví dụ: "chiều mai nộp nhé") | Cần một lớp AI ngữ nghĩa (LLM) để trích xuất thực thể, Rule thông thường không giải quyết nổi ngôn ngữ tự do. |
+| Mailbrew / Feedly AI Feeds | [feedly.com](https://feedly.com) | Tổng hợp các bản tin RSS, Email newsletters thành một bản Daily Digest gửi định kỳ | Giao diện đọc rất thoáng, cấu trúc thông tin rõ ràng | Chỉ áp dụng cho văn bản có cấu trúc tĩnh (báo chí, newsletter), không hỗ trợ luồng chat tương tác đa thread phức tạp của Discord | Học tập format trình bày "Daily Digest" 3 dòng: [Sự kiện/Link] - [Deadline] - [Hành động cần làm]. |
 
 **Research takeaway (2-3 câu — nên build gì / không build gì):**
 
 ```text
-Nhóm KHÔNG NÊN xây dựng lại ứng dụng xem lịch từ đầu (vì Google Calendar đã quá hoàn hảo), và KHÔNG NÊN cố gắng can thiệp vào các API đóng của Zalo. Nhóm NÊN tập trung xây dựng một "Parser module" nhẹ nhàng: tiếp nhận văn bản thông báo thô từ Discord/Canvas, dùng LLM bóc tách thành dữ liệu có cấu trúc [Môn, Tên bài, Hạn nộp, Link nộp], hiển thị bảng kiểm duyệt nhanh rồi đẩy thẳng sang Google Calendar qua chuẩn file .ics hoặc API.
+Nhóm KHÔNG NÊN tốn công xây dựng hệ thống bot tự động phức tạp can thiệp sâu vào tài khoản người dùng (nguy cơ lỗi API và bảo mật token). Thay vào đó, nhóm NÊN tập trung xây dựng một AI Workflow chuyên xử lý ngôn ngữ tự nhiên: Tiếp nhận nguồn dữ liệu text thô → LLM phân loại mức độ ưu tiên và trích xuất thực thể có cấu trúc (Entity Extraction) → Trả về một bản "Daily Digest" ngắn gọn với đường link đối soát nguyên bản.
 ```
 
 ---
@@ -128,65 +123,72 @@ Nhóm KHÔNG NÊN xây dựng lại ứng dụng xem lịch từ đầu (vì Goo
 
 ### 5.1. Current workflow bản nhóm
 
+Dán workflow hoặc link file: `02-group-problem-statement-workflow.png`
+
 ```text
-[1 Mở Canvas LMS kiểm tra To-do: 7'] 
-→ [2 Lướt channel #announcement, #lab Discord: 15' - BOTTLENECK] 
-→ [3 Đọc tin nhắn Zalo nhóm đồ án: 10' - BOTTLENECK] 
-→ [4 Check Teams & Outlook mail trường: 5'] 
-→ [5 Nhập tay hạn nộp vào Google Calendar/Notion: 6'] 
-→ [6 Rà soát chéo các môn xem có trùng lịch: 2']
+CURRENT STATE — 27 phút
+
+[1 Mở Discord, duyệt 4-5 channel: 3' - Học viên]
+→ [2 Cuộn lội tin nhắn & đọc các thread con: 15' - Học viên]  <-- BOTTLENECK CHÍNH
+→ [3 Mở Gmail tìm kiếm email từ VLearn/BTC: 4' - Học viên]
+→ [4 Mở GitHub kiểm tra commits cập nhật đề bài: 2' - Học viên]
+→ [5 Tự ghi chép thủ công mốc deadline/link vào sổ/lịch: 3' - Học viên]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú (handoff? bottleneck?) |
 |---|---|---|---|---|---|
-| 1 | Học viên | Hệ thống Canvas LMS | Danh sách deadline chính thức môn học | 7 phút / đầu tuần | Thao tác đơn giản nhưng chỉ chứa một phần thông tin. |
-| 2 | Học viên | Server Discord môn học | Các tin nhắn cập nhật đề bài, dặn dò của TA | 15 phút / đầu tuần | **BOTTLENECK CHÍNH:** Phải lướt hàng chục tin nhắn thảo luận để tìm mốc thời gian thực sự. |
-| 3 | Học viên | Nhóm Zalo đồ án | Tin nhắn phân công task, hẹn lịch họp nhóm | 10 phút / đầu tuần | **BOTTLENECK PHỤ:** Tin nhắn trôi nhanh, thông tin mốc nộp bài bị lẫn trong trò chuyện phiếm. |
-| 4 | Học viên | Microsoft Teams & Outlook | Email học vụ, lịch seminar bổ sung | 5 phút / đầu tuần | Kiểm tra hòm thư sinh viên để không sót thông báo khẩn. |
-| 5 | Học viên | Thông tin nhặt được từ 4 bước trên | Sự kiện trên Google Calendar / bảng To-do | 6 phút / đầu tuần | Gõ thủ công từng dòng: Tên bài, Ngày giờ nộp, Ghi chú. Dễ gõ nhầm giờ. |
-| 6 | Học viên | Google Calendar đã nhập | Kế hoạch học tập tuần hoàn chỉnh | 2 phút / đầu tuần | Tự đối chiếu chéo xem có bị trùng lịch thi hoặc sót bài quiz nào không. |
+| 1. Kiểm tra Discord | Học viên | Ứng dụng Discord, danh sách 4-5 channels | Mở sẵn các channel thông báo và thảo luận | 3 phút / 3 lần mỗi ngày | Mở phân tán nhiều channel (#announcements, #general, #lab-submission, #qa) |
+| 2. Cuộn đọc & lọc tin nhắn | Học viên | Hàng trăm dòng tin nhắn chat, tin nhắn reply, thread thảo luận | Nhận diện được đâu là tin nhắn dặn dò của GV/Coach | 15 phút / 3 lần mỗi ngày | **BOTTLENECK CHÍNH:** Hoa mắt, dễ bỏ sót dặn dò quan trọng nằm trong thread con |
+| 3. Kiểm tra hòm thư Gmail | Học viên | Hòm thư cá nhân, hộp thư đến | Đọc email thông báo phòng học Zoom hoặc cập nhật lịch | 4 phút / 2 lần mỗi ngày | Dễ bị trôi vào mục Updates/Spam hoặc lẫn với email trường khác |
+| 4. Kiểm tra repo GitHub | Học viên | Trình duyệt web, link GitHub repo của lớp | Xem commit history của giảng viên | 2 phút / 1 lần mỗi ngày | Kiểm tra xem đề lab có thay đổi rubric hay test case mới không |
+| 5. Tự ghi chú deadline/link | Học viên | Thông tin rải rác vừa nhặt được | Note trên Google Calendar hoặc sổ tay cá nhân | 3 phút / 2 lần mỗi ngày | Handoff sang bộ nhớ cá nhân, nguy cơ ghi nhầm giờ hoặc quên cập nhật |
 
 **Bottleneck chính (2-3 câu):**
 
 ```text
-Điểm nghẽn lớn nhất nằm ở Bước 2 và Bước 3 (chiếm 25/45 phút của toàn bộ quy trình). Học viên phải dùng mắt thường để đọc quét các đoạn văn bản tự do dài hàng trăm dòng trên Discord và Zalo nhằm tìm kiếm các mốc hạn nộp bị ẩn giấu trong văn phong trao đổi đời thường của trợ giảng và bạn cùng nhóm.
+Điểm nghẽn nghiêm trọng nhất nằm ở Bước 2: Học viên phải cuộn đọc thủ công hàng trăm tin nhắn thảo luận tự do trên Discord để chắt lọc ra vài dòng thông báo dặn dò của ban tổ chức. Bước này ngốn tới hơn 55% tổng thời gian quy trình (15/27 phút), gây mệt mỏi thị giác và là nguyên nhân trực tiếp dẫn đến việc bỏ sót các deadline hoặc đường link Zoom quan trọng.
 ```
 
 ### 5.2. Future workflow bản nhóm
 
-```text
-[1 Copy text thông báo tuần từ Discord/Canvas: 2' - Người] 
-→ [2 AI phân tích ngữ cảnh & trích xuất Deadline JSON: 1' - Máy/AI] 
-→ [3 Học viên review bảng tổng hợp & bấm Xác nhận: 3' - HUMAN BOUNDARY] 
-→ [4 Tự động đồng bộ sự kiện vào Google Calendar: 1' - Máy]
+Phải nhìn ra 5 thứ: bước nào máy (Rule), bước nào AI, bước nào người, boundary ở đâu, fallback khi AI sai.
 
-Fallback: Nếu AI trích xuất sai ngày giờ hoặc hiểu nhầm ngữ cảnh, học viên chỉnh sửa trực tiếp trên ô dữ liệu xem trước bằng dropdown trong 5 giây, hoặc bấm nút mở link gốc đính kèm để tự đọc lại.
+```text
+FUTURE STATE — 4 phút
+
+[1 Tự động gom tin nhắn/email mới trong khung giờ: 30s - Máy/Rule]
+→ [2 Phân loại ưu tiên & trích xuất Deadline, Link, Action: 30s - Máy/AI Workflow]
+→ [3 Hiển thị bản Daily Digest 3 gạch đầu dòng kèm link đối soát: 10s - Máy/Rule]
+→ [4 Học viên đọc lướt, bấm link kiểm tra và xác nhận lịch: 2.5' - Người/Human Boundary]  <-- BOUNDARY
+→ [5 Đồng bộ 1 chạm vào Google Calendar: 20s - Máy/Rule]
+
+Fallback: Nếu AI trích xuất sai hoặc nghi ngờ sót tin → Học viên bấm trực tiếp vào "Link tin nhắn gốc" đính kèm ngay cạnh gạch đầu dòng để mở đúng bài viết gốc trên Discord/Gmail kiểm tra lại.
 ```
 
 **Before/after impact:**
 
 | Metric | Trước | Sau kỳ vọng | Cách đo |
 |---|---:|---:|---|
-| Tổng thời gian | 45 phút / tuần | 7–8 phút / tuần | Bấm giờ thực tế quy trình tổng hợp đầu tuần của học viên. |
-| Số bước | 6 bước | 4 bước | Đếm số thao tác người dùng phải thực hiện. |
-| Số bước thủ công | 6 bước (100% thủ công) | 2 bước (Copy dữ liệu và Review duyệt) | Đếm số bước đòi hỏi con người thao tác trực tiếp. |
-| Bottleneck chính | Đọc quét 25' trên Discord/Zalo | Review bảng xem trước 3' | Đo thời gian xử lý bước tốn công nhất. |
-| Risk mới | Sót bài tập do trôi tin nhắn | AI trích xuất sai hạn nộp (ảo giác ngày) | Tỷ lệ lỗi được kiểm soát bằng chốt chặn Review bắt buộc của con người. |
+| Tổng thời gian theo dõi thông báo | 27 phút / ngày | Dưới 4 phút / ngày | Bấm giờ thực tế của học viên từ lúc bắt đầu đọc tin đến khi nắm đủ lịch |
+| Số bước quy trình | 5 bước rời rạc | 5 bước liên hoàn | Đếm số thao tác trên các nền tảng |
+| Số bước làm thủ công bằng tay | 5 bước hoàn toàn thủ công | 1 bước duy nhất (duyệt & xác nhận) | Đếm các thao tác đọc - chép thủ công của con người |
+| Bottleneck chính | Lội đọc hàng trăm tin nhắn chat (15') | Đọc lướt bản tóm tắt 3 dòng & đối soát link (2.5') | Đo thời gian của bước tốn nhiều công sức nhất |
+| Risk mới phát sinh | Đọc sót tin nhắn do trôi bài | AI bịa giờ (Hallucination) hoặc trích xuất sai deadline | Đo tỷ lệ lỗi trích xuất trên tổng số thông báo (mục tiêu < 2%) |
 
 ### 5.3. Problem Statement v0 (mỗi field 2-3 câu)
 
 | Field | Nội dung |
 |---|---|
-| **Actor** | Học viên tham gia chương trình đào tạo AI tại VinUni (VinUni AI20k), phải theo sát khối lượng kiến thức lớn và các thông báo cập nhật liên tục. |
-| **Workflow** | Hằng tuần, học viên mở thủ công 5 kênh (Canvas, Teams, Discord, Outlook, Zalo) để đọc lướt, nhặt ra các mốc hạn nộp và tự gõ vào Google Calendar. |
-| **Bottleneck** | Bước đọc quét các đoạn chat dài trên Discord và Zalo tốn tới 25 phút và gây căng thẳng mắt, rất dễ bỏ sót các thông báo quan trọng của trợ giảng. |
-| **Impact** | Tốn 45 phút mỗi tuần (~30 giờ/năm); từng có học viên bị trễ bài quiz 5% điểm quá trình; luôn trong trạng thái bất an vì sợ bị sót việc. |
-| **Success Metric** | Giảm tổng thời gian từ 45 phút xuống dưới 10 phút/tuần; tỷ lệ trích xuất đúng hạn nộp đạt trên 90%; tỷ lệ bỏ sót deadline quan trọng giảm về 0%. |
-| **Boundary** | Chỉ tập trung vào việc đọc thông báo và trích xuất hiển thị bảng xem trước; không can thiệp vào tài khoản chat cá nhân và không tự động nộp bài thay học viên. |
+| **Actor** | Gần 1000 học viên đang tham gia khóa đào tạo AI Thực chiến VinUni (tiêu biểu là lớp K4B), những người phải theo dõi sát sao lịch học lý thuyết, lịch làm lab thực hành và các workshop chuyên đề hàng ngày. |
+| **Workflow** | Mỗi ngày 3 lần (sáng trước 9h00, chiều sau giờ học và buổi tối), học viên phải mở ứng dụng Discord duyệt qua 4-5 channels, mở hòm thư Gmail và kiểm tra GitHub repo để rà soát tất cả các dặn dò, link phòng học và hạn nộp bài. |
+| **Bottleneck** | Khâu cuộn đọc thủ công hàng trăm tin nhắn trao đổi tự do và các thread con trên Discord để tìm kiếm thông báo chính thức chiếm tới 15/27 phút mỗi ngày và gây mệt mỏi nhận thức cao độ. |
+| **Impact** | Mỗi học viên lãng phí khoảng 20-30 phút/ngày (~3 giờ/tuần). Nghiêm trọng hơn, ít nhất 3-4 học viên trong lớp đã từng bị nộp trễ bài lab hoặc không tìm thấy link Zoom workshop do thông báo bị trôi, ảnh hưởng trực tiếp đến kết quả đánh giá cuối khóa. |
+| **Success Metric** | Giảm tổng thời gian theo dõi và tổng hợp thông báo từ 27 phút/ngày xuống dưới 4 phút/ngày; tỷ lệ học viên bị bỏ sót deadline hoặc link Zoom giảm về 0%. |
+| **Boundary** | Hệ thống chỉ làm nhiệm vụ trích xuất, phân loại và tóm tắt thông báo kèm link dẫn chứng; TUYỆT ĐỐI KHÔNG tự động bấm nộp bài lab, KHÔNG tự ý trả lời tin nhắn thay học viên và KHÔNG tự động tạo lịch mà chưa có sự xác nhận của người dùng. |
 
 **Câu hỏi AI phản biện v0 (nếu có):**
-- Field nào mơ hồ: Success metric ban đầu ghi "giúp học viên nắm deadline tốt hơn" bị mơ hồ về cách đo lường; Boundary chưa làm rõ phạm vi dữ liệu đầu vào.
-- Tôi sửa gì: Siết chặt Success Metric thành con số cụ thể (giảm từ 45' xuống dưới 10', độ chính xác trích xuất > 90%); định nghĩa rõ Boundary là chỉ nhận text đầu vào do học viên chủ động cung cấp, không tự ý cào dữ liệu tài khoản riêng tư.
+- Field nào mơ hồ: Field Success Metric ban đầu chỉ ghi "tiết kiệm thời gian" mà chưa nói rõ cách đo; Field Boundary chưa nói rõ nếu AI trích xuất sai giờ nộp bài thì ai chịu trách nhiệm.
+- Tôi sửa gì: Đã bổ sung con số định lượng cụ thể (từ 27 phút xuống dưới 4 phút/ngày, đo bằng bấm giờ); quy định rõ ranh giới con người: AI chỉ hỗ trợ soạn bản Digest, học viên bắt buộc phải duyệt và bấm xác nhận trước khi lưu lịch.
 
 ---
 
@@ -194,121 +196,126 @@ Fallback: Nếu AI trích xuất sai ngày giờ hoặc hiểu nhầm ngữ cả
 
 ### 6.0. Ma trận độ phù hợp (suy nghĩ nhanh, không thay quyết định cuối)
 
-- Độ mơ hồ: [x] Thấp (có đúng/sai rõ) — Vì sao: Hạn nộp bài tập là thông tin nhị phân rõ ràng (đúng ngày giờ nộp hay sai, không có vùng xám hay cảm tính).
-- Độ phức tạp: [x] Trung bình (3-4 bước, phụ thuộc nhau) — Vì sao: Quy trình đi qua chuỗi bước tuần tự: Nhận văn bản thô → Parse thực thể ngày tháng → Hiển thị kiểm duyệt → Đồng bộ sang Calendar.
+- Độ mơ hồ: [ ] Thấp / [x] Cao (nhiều cách diễn đạt bằng ngôn ngữ tự nhiên tự do của giảng viên/coach) — Vì sao: Thông báo không theo mẫu cố định, có thể là câu chat dặn dò ngắn ("hôm nay nộp trước 5h chiều nhé"), có thể là thông báo dài có format, hoặc câu trả lời trong thread. Rule thông thường không thể bao quát hết các cách hành văn.
+- Độ phức tạp: [x] Thấp-Trung bình (Quy trình 3-4 bước nối tiếp, luồng đi thẳng một chiều) — Vì sao: Dữ liệu đi thẳng từ Thu thập text thô → Trích xuất thực thể → Định dạng bản Digest → Hiển thị cho người dùng duyệt. Không cần rẽ nhánh động hay tự quyết định vòng lặp phức tạp.
 
 **Bài toán nhóm nằm ở ô nào:**
 
 ```text
-Ô: Độ mơ hồ Thấp — Độ phức tạp Trung bình (Phù hợp nhất với WORKFLOW).
+Ô "Độ mơ hồ cao × Độ phức tạp thấp-trung bình" → Hoàn toàn phù hợp với giải pháp [AI WORKFLOW].
 ```
 
 **Vì sao (2-3 câu):**
 
 ```text
-Bài toán đòi hỏi độ chính xác tuyệt đối về mặt dữ liệu (ngày giờ hạn nộp không được phép sai lệch), trong khi cấu trúc luồng xử lý là một đường thẳng cố định từ đầu vào tới đầu ra. Do đó, một kiến trúc Workflow kết hợp giữa quy tắc chuẩn hóa và mô hình ngôn ngữ bóc tách ngữ cảnh là hoàn hảo nhất, không cần đến sự tùy biến tự trị của Agent.
+Bài toán đòi hỏi năng lực đọc hiểu ngôn ngữ tự nhiên và trích xuất thực thể (Named Entity Extraction) rất linh hoạt của AI để xử lý văn phong chat tự do của giảng viên mà Rule cứng không làm được. Tuy nhiên, logic xử lý lại đi thẳng một chiều rất rõ ràng và có ranh giới kiểm soát chặt chẽ, không hề cần đến khả năng tự lập kế hoạch (autonomous planning) hay tự gọi công cụ không kiểm soát của một Agent.
 ```
 
 ### 6.1. So sánh Rule / Workflow / Agent (so trên cùng 1 bài)
 
 | Mức | Phương án cho bài toán nhóm | Khi nào đủ | Rủi ro | Chọn? (Dùng cho bước nào?) |
 |---|---|---|---|---|
-| **Rule** | Dùng regex để tìm kiếm từ khóa thời gian (như "23h59", "dd/mm") và từ khóa "deadline", "bài tập". | Đủ khi thông báo viết chuẩn form hành chính: "Hạn nộp bài tập 1: 23h59 ngày 15/10". | Bị gãy hoàn toàn trước văn phong tự nhiên: "tối mai nộp nhé", "thầy dời sang cuối tuần", "làm trước buổi lab sau". | **Một phần:** Dùng cho bước tiền xử lý lọc link Canvas và định dạng file iCal. |
-| **Workflow** | Pipeline tuần tự: Rule nhận diện link/môn → LLM trích xuất JSON [Môn, Task, Hạn, Kênh] → Giao diện Review → Sync Calendar. | Đủ cho 95% trường hợp văn phong tự do của trợ giảng và sinh viên trên Discord/Zalo. | Rủi ro LLM bị hallucination ngày tháng nếu ngữ cảnh thông báo quá rối rắm. | **CHỌN CHÍNH:** Áp dụng cho toàn bộ luồng xử lý cốt lõi từ trích xuất đến hiển thị kiểm duyệt. |
-| **Agent** | AI Agent tự lập kế hoạch, tự gọi tool đăng nhập các nền tảng chat, tự đọc trộm tin nhắn, tự quyết định tạo lịch và gửi tin nhắc bài. | Chỉ cần khi bài toán yêu cầu hệ thống tự tương tác qua lại, tự thương lượng lịch họp hoặc tự nộp bài. | Cực kỳ nguy hiểm về bảo mật quyền riêng tư; Agent có thể tự ý spam tin nhắn hoặc xóa nhầm sự kiện lịch; chi phí token cao và khó kiểm soát lỗi. | **KHÔNG CHỌN:** Hoàn toàn overkill và tạo ra rủi ro không thể chấp nhận được đối với học viên. |
+| **Rule** | Thiết lập bộ lọc từ khóa cứng (vd: "deadline", "zoom", "hạn nộp") trên Discord & Gmail Filter. | Đủ khi 100% giảng viên và BTC luôn dùng đúng cú pháp chuẩn và luôn tag @everyone hoặc ghim bài. | Bỏ sót các câu dặn dò tự nhiên không chứa từ khóa định sẵn (vd: "bài chiều nay nộp trước 17h nha cả lớp"); gây báo động giả khi học viên khác chat nhắc lại từ khóa. | **Có dùng một phần:** Dùng Rule ở Bước 1 (Gom tin nhắn theo mốc thời gian) và Bước 3 (Render giao diện hiển thị). |
+| **Workflow** | Rule gom tin nhắn thô → AI phân tích ngữ cảnh, phân loại mức độ quan trọng và trích xuất [Sự kiện/Link - Deadline - Action] → Rule xuất bản Daily Digest 3 dòng kèm link gốc → Người dùng duyệt và bấm lưu. | Đủ để giải quyết triệt để bài toán: AI xử lý phần ngữ nghĩa mơ hồ, Rule xử lý phần kết nối và con người giữ quyền quyết định cuối cùng. | AI có thể tóm tắt sót hoặc hallucination về mốc thời gian nếu câu văn quá mơ hồ. (Khắc phục bằng việc bắt buộc hiển thị trích dẫn câu gốc và link tin nhắn để người dùng đối soát 1 chạm). | **CHỌN ĐÂY LÀ MỨC CHÍNH:** Giải quyết đúng điểm nghẽn, kiểm soát được rủi ro, chi phí vận hành cực rẻ và triển khai ngay được. |
+| **Agent** | Một AI Agent tự đăng nhập tài khoản Discord/Gmail của học viên, tự quyết định lúc nào cần đọc kênh nào, tự suy luận và tự tạo sự kiện trên Google Calendar, tự nộp bài lab thay học viên. | Chỉ cần khi học viên hoàn toàn không có mặt và muốn trao quyền tự chủ tuyệt đối cho AI đưa ra quyết định hành động thay mình. | Cực kỳ nguy hiểm: Nguy cơ lộ lọt Token/API key cá nhân; Agent có thể hiểu sai ngữ cảnh và tự nộp bài nhầm file hoặc tạo lịch sai giờ gây lỡ thi; chi phí token cao và khó kiểm soát vòng lặp vô tận. | **KHÔNG CHỌN:** Bài toán không cần quyền tự chủ hành động (autonomy); rủi ro vượt xa giá trị mang lại. |
 
 **5 câu hỏi chốt (trả lời câu đầy đủ):**
-1. Rule có giải được 70-80% case không? -> *Không, vì thông báo trên Discord và Zalo được viết bằng ngôn ngữ tự nhiên đa dạng, chứa tiếng lóng và thời gian tương đối ("tối mai", "thứ Sáu tuần sau").*
-2. Các bước có đi thẳng một đường không hay phải rẽ nhánh? -> *Các bước đi thẳng một đường tuần tự từ Input Text → JSON Extract → Human Review → Calendar Sync, không cần rẽ nhánh động.*
-3. Có thật sự cần Agent tự lập kế hoạch + gọi tool không? -> *Hoàn toàn không cần, vì học viên chỉ cần trích xuất dữ liệu chứ không cần AI tự động ra quyết định hành động.*
-4. Nếu AI sai, ai phát hiện đầu tiên và sửa trong bao lâu? -> *Học viên sẽ là người phát hiện đầu tiên ngay tại màn hình Review trước khi bấm đồng bộ, và có thể sửa lại ô ngày giờ chỉ trong 5 giây.*
-5. Có hạ được từ Agent → Workflow → Rule không? -> *Có thể hạ từ Agent xuống Workflow một cách hoàn hảo, vừa giải quyết triệt để bài toán vừa loại trừ được mọi rủi ro bảo mật.*
+1. **Rule có giải được 70-80% case không?**  
+   *Trả lời:* Không, vì ngôn ngữ dặn dò trên Discord mang tính hội thoại tự do cao, các thông báo thay đổi đột xuất của giảng viên thường không theo cấu trúc cố định nên Rule chỉ bắt được khoảng 30-40% trường hợp có từ khóa chuẩn.
+2. **Các bước có đi thẳng một đường không hay phải rẽ nhánh?**  
+   *Trả lời:* Toàn bộ quy trình đi thẳng một đường tuần tự: Thu thập tin nhắn → Trích xuất thực thể bằng AI → Xuất bản Digest → Người dùng duyệt xác nhận.
+3. **Có thật sự cần Agent tự lập kế hoạch + gọi tool không?**  
+   *Trả lời:* Hoàn toàn không cần, vì các nguồn dữ liệu và mục tiêu đầu ra đã được xác định cố định, không đòi hỏi AI phải tự suy nghĩ xem bước tiếp theo cần làm gì.
+4. **Nếu AI sai, ai phát hiện đầu tiên và sửa trong bao lâu?**  
+   *Trả lời:* Học viên phát hiện ngay lập tức trong vòng 10-15 giây khi đọc bản Digest, vì mỗi đầu việc đều có link dẫn trực tiếp về tin nhắn gốc để đối soát nhanh.
+5. **Có hạ được từ Agent → Workflow → Rule không?**  
+   *Trả lời:* Có, nhóm chủ động hạ thẳng từ Agent xuống Workflow để loại bỏ hoàn toàn rủi ro bảo mật và mất kiểm soát, chỉ dùng AI ở đúng mắt xích đọc hiểu ngôn ngữ tự nhiên.
 
 **Mức chọn:**
 
 ```text
-WORKFLOW (Quy trình làm việc có cấu trúc: Rule tiền xử lý + LLM trích xuất thực thể + Human-in-the-loop review).
+[ WORKFLOW ]
 ```
 
 **Vì sao chọn (3-4 câu):**
 
 ```text
-Nhóm chọn Workflow vì đây là điểm cân bằng hoàn hảo giữa năng lực hiểu ngôn ngữ tự nhiên của LLM và sự an toàn, có thể kiểm soát của quy trình tuyến tính. Workflow giải quyết trọn vẹn điểm nghẽn đọc quét tin nhắn phức tạp mà không đưa hệ thống vào trạng thái rủi ro bảo mật như Agent. Chi phí vận hành thấp, dễ triển khai và kiểm thử trong phạm vi bài lab.
+Nhóm chọn mức Workflow vì đây là điểm cân bằng hoàn hảo giữa tính hiệu quả và độ an toàn. Năng lực LLM được tận dụng chính xác vào mắt xích khó nhất là bóc tách ngữ nghĩa từ ngôn ngữ chat tự do thành các trường dữ liệu có cấu trúc (Entity Extraction), điều mà Rule không thể làm được. Đồng thời, cấu trúc Workflow tuần tự cho phép con người giữ vai trò Human-in-the-loop để kiểm duyệt thông tin trước khi hành động, loại bỏ hoàn toàn nguy cơ hành vi mất kiểm soát của Agent.
 ```
 
 **Vì sao không chọn mức đơn giản hơn (2-3 câu):**
 
 ```text
-Nhóm không chọn phương án Rule thuần túy vì hệ thống regex cứng nhắc không thể xử lý được ngôn ngữ tự nhiên tiếng Việt trong giao tiếp hàng ngày của sinh viên và trợ giảng (ví dụ các mốc thời gian tương đối như "hết tuần này", "sau giờ học 2 tiếng"). Nếu dùng Rule, tỷ lệ bỏ sót deadline sẽ vẫn ở mức rất cao (~40-50%).
+Nhóm không chọn mức Rule đơn thuần vì các công cụ lọc từ khóa có sẵn của Discord và Gmail đã được chứng minh là thất bại trong thực tế: Giảng viên và Coach thường xuyên dặn dò bằng câu văn tự nhiên không theo cú pháp cố định, khiến Rule bỏ sót những thông báo quan trọng nhất hoặc gây ra báo động giả làm người dùng mất kiên nhẫn.
 ```
 
 ### 6.2. Problem Statement v1 (v0 sửa chặt hơn + 3 field cuối)
 
 | Field | Nội dung |
 |---|---|
-| **Actor** | Học viên tham gia chương trình đào tạo AI tại VinUni (VinUni AI20k), phải theo sát khối lượng kiến thức lớn, nhiều bài lab hands-on và các thông báo cập nhật liên tục từ giảng viên/TA. |
-| **Workflow** | Hằng tuần, học viên mở thủ công 5 kênh liên lạc (Canvas, Teams, Discord, Outlook, Zalo nhóm) để đọc quét các đoạn thảo luận, nhặt ra các mốc hạn nộp và tự gõ từng dòng vào Google Calendar. |
-| **Bottleneck** | Bước đọc quét thủ công hàng trăm dòng chat tự do trên Discord và Zalo tốn tới 20-25 phút, gây mỏi mắt và rất dễ bỏ sót các thông báo dời lịch hoặc giao thêm bài tập phụ của TA. |
-| **Impact** | Tốn 45 phút mỗi đầu tuần (~30 giờ/năm học); nguy cơ bị trễ bài quiz 5% điểm quá trình hoặc trễ hạn nộp lab report; gây căng thẳng tâm lý thường trực. |
-| **Success Metric** | Giảm tổng thời gian tổng hợp từ 45 phút xuống dưới 10 phút/tuần; tỷ lệ trích xuất đúng hạn nộp đạt trên 90%; tỷ lệ bỏ sót deadline bài tập quan trọng giảm về 0%. |
-| **Boundary** (làm / không làm) | **LÀM:** Trích xuất các thực thể [Môn học, Tên nhiệm vụ, Hạn nộp, Link nộp] từ văn bản thông báo công khai do người dùng cung cấp; xuất file .ics hoặc đồng bộ sang Google Calendar khi có sự đồng ý.<br>**KHÔNG LÀM:** Không can thiệp vào tài khoản riêng tư; không đọc lén tin nhắn cá nhân; không tự động nộp bài hay gửi email thay sinh viên. |
-| **AI intervention point** (can thiệp sau bước nào, trước bước nào) | Can thiệp ngay sau bước người dùng dán văn bản thông báo thô (Input) và ngay trước bước học viên xem bảng tổng hợp (Review), thay thế hoàn toàn công đoạn đọc quét và gõ tay thủ công. |
-| **Mức chọn** (Rule / Workflow / Agent + 1 câu vì sao) | **WORKFLOW:** Kết hợp Rule chuẩn hóa dữ liệu + LLM parse ngữ cảnh tiếng Việt + Giao diện người duyệt, vì luồng xử lý tuyến tính rõ ràng và không cần quyền tự trị của Agent. |
-| **Rủi ro & người thật kiểm tra** (rủi ro lớn nhất + ai kiểm tra bằng cách nào) | Rủi ro lớn nhất là AI bị hallucination trích xuất sai ngày/giờ nộp bài. Người thật kiểm tra: Học viên bắt buộc phải kiểm tra bảng xem trước trong 2-3 phút và nhấn nút "Xác nhận & Đồng bộ" thì sự kiện mới được ghi vào lịch. |
+| **Actor** | Gần 1000 học viên đang tham gia khóa đào tạo AI Thực chiến VinUni (tiêu biểu là lớp K4B), những người phải theo dõi sát sao lịch học lý thuyết, lịch làm lab thực hành và các workshop chuyên đề hàng ngày. |
+| **Workflow** | Mỗi ngày 3 lần (sáng trước 9h00, chiều sau giờ học và buổi tối), học viên phải mở ứng dụng Discord duyệt qua 4-5 channels, mở hòm thư Gmail và kiểm tra GitHub repo để rà soát tất cả các dặn dò, link phòng học và hạn nộp bài. |
+| **Bottleneck** | Khâu cuộn đọc thủ công hàng trăm tin nhắn trao đổi tự do và các thread con trên Discord để tìm kiếm thông báo chính thức chiếm tới 15/27 phút mỗi ngày và gây mệt mỏi nhận thức cao độ. |
+| **Impact** | Mỗi học viên lãng phí khoảng 20-30 phút/ngày (~3 giờ/tuần). Nghiêm trọng hơn, ít nhất 3-4 học viên trong lớp đã từng bị nộp trễ bài lab hoặc không tìm thấy link Zoom workshop do thông báo bị trôi, ảnh hưởng trực tiếp đến kết quả đánh giá cuối khóa. |
+| **Success Metric** | Giảm tổng thời gian theo dõi và tổng hợp thông báo từ 27 phút/ngày xuống dưới 4 phút/ngày; tỷ lệ học viên bị bỏ sót deadline hoặc link Zoom giảm về 0%. |
+| **Boundary (làm / không làm)** | **LÀM:** Thu thập văn bản thông báo công khai, trích xuất thực thể (Deadline, Link Zoom, Yêu cầu hành động) và hiển thị bản tóm tắt Daily Digest 3 dòng kèm link nguồn đối soát.<br>**KHÔNG LÀM:** Không đọc tin nhắn riêng tư (DM); không tự ý tương tác chat thay học viên; không tự động nộp bài; không tự tạo lịch nếu người dùng chưa bấm xác nhận. |
+| **AI intervention point** | AI can thiệp chính xác ở **Bước 2** (ngay sau khi Script/Rule gom các đoạn text tin nhắn mới trong khung giờ và ngay trước khi hiển thị bản Daily Digest cho học viên kiểm duyệt). |
+| **Mức chọn** | **AI Workflow** — Phối hợp nhịp nhàng giữa Rule thu thập dữ liệu, AI xử lý ngôn ngữ tự nhiên và Human kiểm tra phê duyệt cuối cùng. |
+| **Rủi ro & người thật kiểm tra** | Rủi ro lớn nhất là AI bị ảo giác (hallucination) dẫn đến trích xuất nhầm giờ nộp bài hoặc sót link; **Học viên là người thật chịu trách nhiệm kiểm tra** bằng cách đối soát nhanh thông qua đường link dẫn chứng nguyên bản được gắn kèm ngay cạnh từng dòng tóm tắt. |
 
 ### 6.3. Final decision
 
 | Câu hỏi | Yes / Not Yet / No | Ghi chú (câu đầy đủ) |
 |---|---|---|
-| Actor + workflow rõ chưa? | Yes | Học viên lớp VinUni AI và quy trình 6 bước hiện tại đã được bấm giờ đo lường cụ thể. |
-| Baseline + metric đo được chưa? | Yes | Baseline 45 phút/tuần, mục tiêu dưới 10 phút/tuần; tỷ lệ sót deadline giảm về 0%. |
-| Data/input đủ dùng chưa? | Yes | Dữ liệu văn bản thông báo thực tế từ kênh Discord và Canvas môn học có sẵn hàng tuần. |
-| AI sai, hậu quả chấp nhận được không? | Yes | Hậu quả được chặn đứng hoàn toàn nhờ bước Human review trước khi lưu vào lịch. |
-| Có người review/owner không? | Yes | Chính học viên sở hữu lịch là người kiểm duyệt và chịu trách nhiệm cuối cùng. |
-| Có cách non-AI đơn giản hơn không? | No | Các giải pháp Rule hoặc template có sẵn không giải quyết được bài toán hiểu ngôn ngữ tự nhiên trong chat. |
+| Actor + workflow rõ chưa? | **Yes** | Actor là học viên lớp K4B; workflow 5 bước trước/sau đã được định lượng chi tiết đến từng phút. |
+| Baseline + metric đo được chưa? | **Yes** | Baseline hiện tại là 27 phút/ngày; mục tiêu kéo giảm xuống dưới 4 phút/ngày và 0% miss deadline. |
+| Data/input đủ dùng chưa? | **Yes** | Toàn bộ tin nhắn và email thông báo công khai của khóa học đều có sẵn và cập nhật hàng ngày. |
+| AI sai, hậu quả chấp nhận được không? | **Yes** | Hậu quả hoàn toàn kiểm soát được vì có Human Boundary: Bản digest luôn có link nguồn để đối soát ngay lập tức. |
+| Có người review/owner không? | **Yes** | Từng học viên là owner trực tiếp duyệt bản digest của mình trước khi bấm lưu vào lịch cá nhân. |
+| Có cách non-AI đơn giản hơn không? | **No** | Rule lọc từ khóa cứng đã thất bại trong thực tế do ngôn ngữ giao tiếp chat quá tự do và biến đổi liên tục. |
 
 **Decision:**
 
 ```text
-GO (Triển khai thử nghiệm phiên bản Pilot nhỏ nhất).
+[ GO ]
 ```
 
 **Lý do (3-4 câu dựa trên bằng chứng):**
 
 ```text
-Cả nhóm quyết định GO vì bài toán đã thỏa mãn cả 6 tiêu chí kiểm tra: nỗi đau có thật và cấp bách, quy trình Before/After rõ ràng từng phút, ranh giới an toàn được thiết lập chặt chẽ và giải pháp kỹ thuật Workflow nằm hoàn toàn trong tầm tay. Việc áp dụng AI vào đúng điểm nghẽn bóc tách ngôn ngữ tự nhiên mang lại ROI (hiệu quả trên công sức) rất lớn, giúp tiết kiệm 75% thời gian hàng tuần cho học viên mà không tạo ra rủi ro vận hành.
+Nhóm quyết định GO vì bài toán đáp ứng trọn vẹn cả 6 tiêu chí của một dự án AI có giá trị thực tiễn cao: Nhu cầu có thật từ gần 1000 người dùng ngay tại chỗ, dữ liệu đầu vào dồi dào, giải pháp non-AI không xử lý triệt để được, và cấu trúc AI Workflow có ranh giới con người kiểm soát chặt chẽ nên rủi ro gần như bằng không. Việc kéo giảm thời gian từ 27 phút xuống 4 phút/ngày sẽ giải phóng năng lượng đáng kể cho học viên tập trung vào chất lượng làm lab.
 ```
 
 **Nếu Go — pilot nhỏ nhất (data nào, chạy tay ra sao, đo 3 số nào):**
 
 ```text
-- Data pilot: 10 đoạn thông báo thật thu thập từ kênh #announcement và #lab-discussion của lớp VinUni AI trong 2 tuần gần nhất.
-- Chạy tay: Copy 10 đoạn text này đưa vào prompt trích xuất cấu trúc JSON của mô hình ngôn ngữ lớn (Gemini / Claude).
-- Đo 3 số cụ thể:
-  1. Thời gian trích xuất trung bình: Mục tiêu < 5 giây / thông báo.
-  2. Độ chính xác trích xuất hạn nộp: Mục tiêu đạt tối thiểu 9/10 trường hợp đúng tuyệt đối ngày giờ (>= 90%).
-  3. Thời gian học viên review bảng dữ liệu: Mục tiêu < 2 phút cho toàn bộ 10 thông báo.
+- Phạm vi pilot: Thử nghiệm trong 3 ngày liên tiếp với nhóm AGI và 5 học viên tình nguyện lớp K4B.
+- Dữ liệu & cách chạy tay: Hằng ngày lúc 8h30 sáng và 17h00 chiều, copy toàn bộ text thông báo mới từ 3 channel Discord chính (#announcements, #general, #lab-submission) và 1 email mới nhất dán vào prompt AI Workflow chuẩn hóa để sinh ra bản Daily Digest. Gửi bản Digest kèm link nguồn vào nhóm chat thử nghiệm.
+- Đo 3 con số then chốt:
+  1. Thời gian đọc và nắm bắt thông tin của người tham gia (mục tiêu: < 3 phút).
+  2. Tỷ lệ trích xuất chính xác thông tin thực thể của AI (mục tiêu: >= 95% không sai lệch ngày/giờ).
+  3. Tỷ lệ học viên bị bỏ sót thông tin trong 3 ngày thử nghiệm (mục tiêu: 0%).
 ```
 
 **Nếu Not Yet — cần validate gì trước:**
 
 ```text
-(Không áp dụng vì nhóm chọn GO. Tuy nhiên nếu lùi lại, nhóm sẽ cần kiểm tra kỹ hơn về khả năng parse các mốc thời gian viết tắt bằng tiếng Việt của mô hình).
+(Không áp dụng vì nhóm đã chọn GO dựa trên đầy đủ căn cứ)
 ```
 
 **Nếu No-Go — làm gì thay AI:**
 
 ```text
-(Không áp dụng vì nhóm chọn GO. Phương án Non-AI thay thế là cử luân phiên một bạn trong lớp làm "thư ký tuần" nhập chung một Google Calendar chia sẻ cho cả lớp).
+(Không áp dụng)
 ```
 
 **Exit / rollback (khi nào dừng AI, quay về cách cũ):**
 
 ```text
-Nhóm sẽ lập tức dừng giải pháp và quay về quy trình cũ nếu:
-1. Tỷ lệ trích xuất sai lệch ngày giờ của AI vượt quá 15% trong đợt thử nghiệm pilot.
-2. Học viên phản hồi rằng thời gian rà soát lại bảng xem trước còn lâu hơn việc tự đọc tin nhắn gốc.
-3. Có sự cố làm sai lệch lịch dẫn đến học viên bị nộp trễ bài tập thực tế.
+Nhóm sẽ lập tức dừng giải pháp AI và quay về cách đọc thủ công truyền thống nếu:
+1. Trong giai đoạn pilot, tỷ lệ AI trích xuất sai lệch giờ deadline hoặc link Zoom vượt quá 5%, gây hiểu lầm cho học viên.
+2. Thời gian học viên phải bấm vào link đối soát và sửa lỗi tóm tắt của AI vượt quá 10 phút/ngày (mất nhiều thời gian hơn cả việc đọc trực tiếp).
+3. Có thay đổi lớn từ ban tổ chức về việc chuẩn hóa toàn bộ thông báo về một kênh duy nhất có cấu trúc cố định (khi đó giải pháp Rule đơn thuần sẽ thay thế hoàn toàn AI).
 ```
 
 ---
