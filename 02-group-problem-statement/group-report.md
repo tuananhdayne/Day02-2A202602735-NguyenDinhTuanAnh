@@ -25,40 +25,40 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 | 1 | Châu Tùng Dương | Bị miss thông tin quan trọng (deadline nộp lab, link Zoom) do thông báo rải rác trên Discord, Email, GitHub | Học viên khóa AI VinUni (gần 1000 học viên) | Phải lội tin nhắn thủ công trên 4-5 channels và mail; mất 20-30'/ngày | Cực kỳ nhức nhối, cả nhóm và cả lớp đều đang chịu trận mỗi ngày |
 | 2 | Châu Tùng Dương | Tóm tắt Action Items và quyết định kỹ thuật sau buổi họp Google Meet đồ án tốt nghiệp KMA | Trưởng nhóm, thành viên làm đồ án | Nghe lại audio/ghi chú nháp lúc đêm muộn để viết biên bản task | Rất thật, workflow rõ, nhưng phạm vi hơi hẹp cho nhóm làm đồ án |
 | 3 | Châu Tùng Dương | Tóm tắt slide lý thuyết VLearn (40-50 trang) thành Cheat-sheet để làm lab chiều | Học viên khóa AI VinUni | Lật từng trang slide tìm lại công thức/khái niệm khi làm lab | Khá hữu ích, nhưng học viên vẫn có thể tự mở 2 màn hình xem slide |
-| 4 | Đỗ Mạnh Nghĩa | Khó tìm kiếm lại các quyết định kỹ thuật cũ bị trôi trên Slack/Discord | Developer trong dự án, học viên | Thanh search của chat chỉ khớp keyword cứng, không hiểu ngữ cảnh | Pain thật nhưng việc lấy quyền truy cập dữ liệu chat cũ khá phức tạp |
-| 5 | Đỗ Mạnh Nghĩa | Hay quên deadline nộp bài tập lab do không có hệ thống nhắc việc tự động | Học viên hay bị phân tâm | Phải tự ghi chép thủ công vào lịch cá nhân, hay bị sót | Rule đơn giản (Google Calendar) có thể giải quyết được 80% |
-| 6 | Đỗ Mạnh Nghĩa | Review và tóm tắt Pull Request dài trên GitHub khi làm bài tập nhóm | Học viên review code, team lead | Đọc từng file code diff để hiểu toàn bộ thay đổi của thành viên | Bài tập Day 2 và các lab đầu khóa chủ yếu là Markdown, chưa nhiều code diff |
+| 4 | Đỗ Mạnh Nghĩa | Mất thời gian kiểm tra và tổng hợp thông báo từ nhiều nền tảng | Intern, Junior Developer, nhân viên văn phòng; gián tiếp là Mentor/Team Lead | Thông tin phân tán, phải mở nhiều ứng dụng, đọc nhiều nội dung không quan trọng và tự xác định việc cần làm | Pain rõ, xảy ra hằng ngày, dễ đo bằng thời gian và tỷ lệ bỏ sót. Phù hợp làm AI Agent nhưng cần chú ý giới hạn tích hợp API |
+| 5 | Đỗ Mạnh Nghĩa | Khó đánh giá giải pháp kỹ thuật trên Internet có đáng tin và phù hợp với version hiện tại | Intern, Junior Developer, Developer | Mất nhiều thời gian đọc nhiều nguồn, kiểm tra version và thử sai trước khi tìm được giải pháp phù hợp | Có giá trị cao với developer, AI có lợi thế trong tổng hợp và đối chiếu nguồn. Cần kiểm soát hallucination và luôn dẫn về nguồn gốc |
+| 6 | Đỗ Mạnh Nghĩa | Mentor không biết intern đang bị block nếu intern chưa chủ động báo | Intern, Mentor, Team Lead | Thiếu tín hiệu sớm cho thấy intern đang mắc kẹt, khiến vấn đề chỉ được phát hiện sau khi đã mất nhiều thời gian | Pain thực tế nhưng khó hơn về dữ liệu và quyền riêng tư. Nên bắt đầu bằng cảnh báo/gợi ý cho intern thay vì giám sát tự động toàn bộ |
 | 7 | Nguyễn Đình Tuấn Anh | Quản lý, phân loại và đối soát chi tiêu cá nhân từ 3 app ngân hàng (MBBank, Techcombank, Vietcombank) | Sinh viên ở cùng gia đình, tự quản lý chi tiêu | Nhập liệu thủ công từng dòng giao dịch nhỏ từ 3 app vào Notion/Sheets mất 30-35'/tuần | Nỗi đau rất thật, workflow rõ ràng nhưng mang tính cá nhân |
 | 8 | Nguyễn Đình Tuấn Anh | Thu thập, lọc và tóm tắt tin tức công nghệ AI từ Facebook và TikTok để theo dõi xu hướng thực chiến | Sinh viên năm cuối, người học AI | Mất 35'/lần đọc thẩm định để lọc bỏ clip giật tít 30s tìm code/repo thật | Ý tưởng hay nhưng tiêu chí định lượng bài "thực chiến" khó đánh giá ground truth |
 | 9 | Nguyễn Đình Tuấn Anh | Bị miss deadline và thông báo quan trọng do phân tán nhiều kênh (Discord, Teams, Outlook, Zalo) của khóa học VinUni AI | Học viên khóa AI VinUni | Lội tin nhắn thủ công trên 4 kênh, mất 40-50'/tuần; từng trễ nộp quiz | Cực kỳ đồng cảm, hoàn toàn trùng khớp với Candidate 1 của Dương, gom chung vào Cụm A |
-| 10 | Hoàng Phong | Soạn thảo biên bản họp và phân chia công việc cho Câu lạc bộ sinh viên | Ban chủ nhiệm CLB | Vừa điều phối vừa ghi chép, biên bản hay bị thiếu người nhận việc | Tần suất thấp (chỉ họp 1 lần/tuần), không cấp bách bằng việc học hàng ngày |
-| 11 | Hoàng Phong | Tìm kiếm và gợi ý paper học thuật phù hợp cho đề tài nghiên cứu tốt nghiệp | Sinh viên làm khóa luận | Đọc lướt hàng chục bài báo tiếng Anh nhưng độ liên quan thấp | Bài toán quá rộng, khó đánh giá độ chính xác (Ground Truth) trong buổi lab |
-| 12 | Hoàng Phong | Đối chiếu bảng tiêu chí chấm điểm (Rubric) với nội dung bài làm trước khi nộp | Sinh viên làm bài lab / assignment | Mất 30-40' dò thủ công từng mục giữa đề PDF và bài làm | Pain thật nhưng tần suất chỉ xuất hiện lúc nộp bài cuối tuần |
+| 10 | Hoàng Phong | Chuyển họp nhóm thành action list có owner và deadline | Nhóm sinh viên làm đồ án, team dự án | Vừa điều phối vừa ghi chép không kịp, sau họp dễ bị rơi rụng đầu việc | Workflow ngắn, lặp lại 2 lần/tuần, hậu quả thấy được ngay |
+| 11 | Hoàng Phong | Đối chiếu bài nháp với rubric trước khi nộp | Học viên làm bài lab / assignment | Phải mở nhiều tài liệu đối chiếu thủ công từng tiêu chí rubric, dễ sót mục | Actor, đầu vào/ra và tiêu chí đúng/sai khá rõ; lỗi thiếu mục có thể đếm |
+| 12 | Hoàng Phong | Tìm yêu cầu nộp bài từ nhiều nguồn | Sinh viên, học viên các khóa học | Yêu cầu bài tập rải rác ở slide bài giảng, repo GitHub và thông báo lớp | Pain lặp lại, ảnh hưởng deadline và dễ vẽ workflow |
 
 ### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A. Quản lý & Lọc thông báo đa kênh | #1, #5, #9 | Tiếp nhận thông tin từ nhiều nguồn rời rạc, cần lọc ra thông tin quan trọng có chứa hành động cần làm | Pain point xảy ra hàng ngày, tần suất cao nhất, ảnh hưởng diện rộng |
-| B. Trích xuất Action Items cuộc họp | #2, #10 | Chuyển đổi dữ liệu âm thanh/hội thoại trao đổi tự do thành biên bản có cấu trúc và phân công nhiệm vụ | Có bottleneck rõ ràng, dễ đo lường bằng thời gian soạn thảo |
-| C. Tóm tắt & Tra cứu tài liệu học tập | #3, #4, #8, #11 | Tìm kiếm ngữ nghĩa và cô đọng tài liệu dài (slide, paper, chat history, tin tức AI) thành kiến thức ngắn gọn | Cần AI đọc hiểu tốt, nhưng rủi ro hallucination cần kiểm soát kỹ |
-| D. Quản lý chi tiêu & Code/Rubric Review | #6, #7, #12 | Xử lý dữ liệu kỹ thuật, đối soát tài chính cá nhân và kiểm tra tiêu chí nộp bài | Workflow rõ ràng nhưng mang tính cá nhân hoặc phụ thuộc công cụ ngoài |
+| A. Tổng hợp thông báo & yêu cầu nộp bài đa kênh | #1, #4, #9, #12 | Tiếp nhận thông tin từ nhiều nguồn rời rạc (Discord, Mail, GitHub), cần lọc ra yêu cầu nộp bài và deadline | Pain point chung được cả 4 thành viên cùng chỉ ra; tần suất hằng ngày, ảnh hưởng trực tiếp đến kết quả học |
+| B. Chuyển đổi cuộc họp thành Action Items | #2, #10 | Chuyển đổi dữ liệu hội thoại trao đổi tự do thành danh sách việc có người phụ trách và thời hạn | Workflow ngắn, lặp lại 2 lần/tuần, có bottleneck rõ ràng |
+| C. Đọc hiểu & Đối chiếu tài liệu học thuật | #3, #11 | Đối chiếu bài nháp với rubric hoặc tóm tắt slide bài giảng thành cheat-sheet | Tiêu chí đúng/sai rõ, đếm được lỗi thiếu sót |
+| D. Hỗ trợ Developer & Quản lý thông tin cá nhân | #5, #6, #7, #8 | Đánh giá độ tin cậy giải pháp kỹ thuật, phát hiện intern bị block, quản lý chi tiêu cá nhân | Bài toán hay cho developer nhưng phức tạp về dữ liệu hoặc mang tính cá nhân |
 
 ### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
 
-| Candidate | Vì sao vào shortlist (2-3 ý) | Rủi ro / điều chưa rõ |
-|---|---|---|
-| **Candidate 1: Miss thông báo quan trọng trên Discord/Email/GitHub** (Đề xuất bởi C.T.Dương) | 1. Actor cực kỳ rõ và có sẵn ngay tại lớp (gần 1000 học viên).<br>2. Pain point diễn ra đều đặn 3 lần/ngày; đo được chính xác bằng phút (20-30') và số lần miss deadline.<br>3. Kiểm chứng được ngay lập tức bằng khảo sát thật tại lớp. | Phạm vi tích hợp API đa nền tảng có thể bị phình to nếu không giới hạn rõ boundary ở mức AI Workflow xử lý text nguồn. |
-| **Candidate 2: Trích xuất Action Items sau họp Google Meet đồ án** (Đề xuất bởi C.T.Dương) | 1. Workflow lặp lại hàng tuần (2-3 lần), bottleneck rất rõ ở khâu nghe lại audio.<br>2. Giảm trực tiếp thời gian soạn biên bản từ 30' xuống dưới 5'. | Độ chính xác của transcript tiếng Việt cho các thuật ngữ chuyên ngành mật mã/CNTT chưa chắc chắn. |
-| **Candidate 7: Quản lý, phân loại và đối soát chi tiêu từ 3 app ngân hàng** (Đề xuất bởi N.Đ.Tuấn Anh) | 1. Workflow bóc tách 5 bước rất rõ ràng, dữ liệu biến động số dư có cấu trúc thời gian và số tiền cụ thể.<br>2. Đo lường được chính xác bằng thời gian hoàn thành (giảm từ 60' xuống 7'/tuần).<br>3. Dữ liệu text/ảnh giao dịch rất phù hợp với AI OCR và classification. | Mang tính tài chính cá nhân riêng tư, không giải quyết bài toán chung của cả lớp khóa học VinUni AI; rào cản bảo mật khi đưa dữ liệu ngân hàng vào mô hình. |
+| Rank | Problem (Candidate) | Vì sao vào shortlist | Rủi ro / điều chưa chắc |
+|---|---|---|---|
+| 1 | **Chuyển họp nhóm thành action list có owner và deadline** (Candidate #2, #10) | Workflow ngắn, lặp lại 2 lần/tuần; hậu quả thấy được ngay; đo được thời gian và số việc bị bỏ sót. | Cần kiểm chứng các thành viên có thật sự dùng action list sau họp. |
+| 2 | **Đối chiếu bài nháp với rubric trước khi nộp** (Candidate #11) | Actor, đầu vào/ra và tiêu chí đúng/sai khá rõ; lỗi thiếu mục có thể đếm. | Rubric từng môn khác nhau, không nên hứa kiểm tra chất lượng học thuật tự động. |
+| 3 | **Tìm yêu cầu nộp bài và thông báo từ nhiều nguồn** (Candidate #1, #4, #9, #12) | Pain lặp lại hàng ngày, ảnh hưởng deadline và dễ vẽ workflow; cả 4 thành viên đều gặp phải. | Một phần pain có thể giải bằng cách tổ chức thông tin, cần chứng minh vì sao Rule không đủ và cần AI bóc tách ngữ cảnh. |
 
 ### 3.4. Score để đồng thuận (chấm 1-5, ép nói rõ vì sao cho 5 / cho 3)
 
 | Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| **Candidate 1 (Miss thông báo đa kênh)** | 5 | 5 | 5 | 5 | 5 | 5 | 5 | **35** |
-| **Candidate 2 (Action Items họp Meet)** | 5 | 4 | 4 | 4 | 4 | 4 | 4 | **29** |
-| **Candidate 7 (Quản lý chi tiêu 3 ngân hàng)** | 5 | 5 | 5 | 4 | 4 | 4 | 3 | **30** |
+| **Tìm yêu cầu nộp bài & thông báo từ nhiều nguồn** | 5 | 5 | 5 | 5 | 5 | 5 | 5 | **35** |
+| **Chuyển họp nhóm thành action list có owner và deadline** | 5 | 4 | 4 | 4 | 4 | 4 | 4 | **29** |
+| **Đối chiếu bài nháp với rubric trước khi nộp** | 4 | 4 | 4 | 4 | 4 | 4 | 3 | **27** |
 
 **Candidate nhóm chọn (1 bài duy nhất):**
 
@@ -69,20 +69,20 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 **Vì sao chọn (4-5 câu):**
 
 ```text
-Bài toán đạt điểm tối đa (35/35) trên cả 7 tiêu chí đánh giá vì đây là vấn đề "sống còn" diễn ra mỗi ngày của chính 4 thành viên trong nhóm và gần 1000 bạn học cùng khóa. Workflow hiện tại có điểm nghẽn rất rõ ràng (mất 20-30 phút/ngày lội tin nhắn thủ công) và để lại hậu quả đo đếm được (nộp trễ bài lab, vào nhầm link Zoom workshop). Nhóm có lợi thế tuyệt đối khi sở hữu sẵn tập người dùng thật ngay tại chỗ để phỏng vấn, khảo sát lấy số liệu kiểm chứng chỉ trong 10 phút. Quan trọng nhất, bài toán cho phép so sánh rạch ròi giữa Rule (lọc từ khóa), AI Workflow (bóc tách ngữ cảnh) và Agent (tự động hóa hoàn toàn), hoàn toàn vừa vặn để giải quyết triệt để trong khuôn khổ buổi lab 4 tiếng.
+Bài toán "Tìm yêu cầu nộp bài và thông báo từ nhiều nguồn" đạt điểm tuyệt đối (35/35) trên cả 7 tiêu chí vì đây là nỗi đau chung lớn nhất mà cả 4 thành viên (Dương, Nghĩa, Tuấn Anh, Phong) và gần 1000 bạn học cùng khóa đều đang trực tiếp đối mặt mỗi ngày. Điểm nghẽn quy trình rất rõ ràng (mất 20-30 phút/ngày lội tin nhắn) và để lại hậu quả nghiêm trọng có thể đo đếm được (trễ deadline nộp lab, lỡ link Zoom workshop). Nhóm có lợi thế lớn khi sở hữu sẵn tập người dùng thật ngay tại lớp để phỏng vấn lấy bằng chứng kiểm chứng chỉ trong 10 phút. Quan trọng nhất, bài toán cho phép so sánh rành mạch giữa Rule (lọc từ khóa), AI Workflow (bóc tách ngữ cảnh) và Agent (tự động hóa hoàn toàn), rất vừa vặn để giải quyết triệt để trong buổi lab 4 tiếng.
 ```
 
 **Vì sao KHÔNG chọn các candidate còn lại (mỗi bài 2-3 câu):**
 
 ```text
-- Không chọn Candidate 2 (Action Items họp Meet): Mặc dù pain point có thật, nhưng việc kiểm chứng phụ thuộc vào lịch họp đột xuất của nhóm KMA vào buổi tối, không thể kiểm chứng trực tiếp ngay trên lớp học; đồng thời phụ thuộc nhiều vào chất lượng công cụ Speech-to-Text bên ngoài.
-- Không chọn Candidate 7 (Quản lý chi tiêu từ 3 ngân hàng): Mặc dù quy trình bóc tách biến động số dư và gán danh mục có số liệu đo lường rất cụ thể, nhưng bài toán này mang tính riêng tư cá nhân, dữ liệu tài chính nhạy cảm khó kiểm chứng công khai trong lớp học, và không giải quyết trực tiếp bức xúc cấp bách hàng ngày cho tập thể học viên khóa học VinUni AI như Candidate 1.
+- Không chọn "Chuyển họp nhóm thành action list": Dù workflow ngắn và lặp lại 2 lần/tuần, nhưng nhóm chưa chắc chắn các thành viên có thật sự mở action list ra dùng sau họp hay không; ngoài ra việc kiểm chứng phụ thuộc vào lịch họp buổi tối nên khó làm khảo sát ngay tại lớp.
+- Không chọn "Đối chiếu bài nháp với rubric trước khi nộp": Mặc dù tiêu chí đúng/sai khá rõ, nhưng rubric của từng môn và từng bài lab rất khác nhau, không nên hứa kiểm tra chất lượng học thuật tự động vì AI rất dễ bị ảo giác (hallucination) khi đánh giá các nội dung mang tính định tính.
 ```
 
 **Disagreement (nếu có — ai lo gì, chốt ra sao):**
 
 ```text
-Thành viên Đỗ Mạnh Nghĩa lo ngại rằng việc kết nối trực tiếp vào bot Discord và Gmail API sẽ gặp rào cản về bảo mật, quyền riêng tư và thời gian thiết lập kỹ thuật quá dài cho một buổi lab. Nhóm đã thảo luận và thống nhất chốt boundary chặt chẽ: Ở phạm vi lab này, nhóm không xây dựng bot can thiệp hệ thống phức tạp mà thiết kế một AI Workflow nhận dữ liệu đầu vào là các đoạn text thông báo được xuất/copy từ các kênh, AI tập trung xử lý trích xuất Entity (Deadline, Link, Action) và xuất ra Daily Digest kèm link gốc để con người đối soát.
+Thành viên Đỗ Mạnh Nghĩa lo ngại rằng một phần pain point của việc tìm yêu cầu nộp bài có thể giải quyết bằng cách tổ chức lại thông tin hoặc dùng bot Discord tự động. Tuy nhiên, qua phân tích của Dương và Tuấn Anh, nhóm thống nhất rằng giảng viên thường xuyên dặn dò bằng ngôn ngữ tự nhiên không theo cú pháp cố định, nên Rule cứng sẽ bỏ sót các thông báo quan trọng. Nhóm chốt boundary: Không xây dựng bot phức tạp can thiệp hệ thống mà xây dựng một AI Workflow tập trung vào bóc tách thực thể (Deadline, Link Zoom, Yêu cầu hành động) và luôn có link gốc để con người đối soát.
 ```
 
 ---
