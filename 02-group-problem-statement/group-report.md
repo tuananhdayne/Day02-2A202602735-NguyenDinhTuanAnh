@@ -30,17 +30,19 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 | 6 | Đỗ Mạnh Nghĩa | Review và tóm tắt Pull Request dài trên GitHub khi làm bài tập nhóm | Học viên review code, team lead | Đọc từng file code diff để hiểu toàn bộ thay đổi của thành viên | Bài tập Day 2 và các lab đầu khóa chủ yếu là Markdown, chưa nhiều code diff |
 | 7 | Nguyễn Đình Tuấn Anh | Quản lý, phân loại và đối soát chi tiêu cá nhân từ 3 app ngân hàng (MBBank, Techcombank, Vietcombank) | Sinh viên ở cùng gia đình, tự quản lý chi tiêu | Nhập liệu thủ công từng dòng giao dịch nhỏ từ 3 app vào Notion/Sheets mất 30-35'/tuần | Nỗi đau rất thật, workflow rõ ràng nhưng mang tính cá nhân |
 | 8 | Nguyễn Đình Tuấn Anh | Thu thập, lọc và tóm tắt tin tức công nghệ AI từ Facebook và TikTok để theo dõi xu hướng thực chiến | Sinh viên năm cuối, người học AI | Mất 35'/lần đọc thẩm định để lọc bỏ clip giật tít 30s tìm code/repo thật | Ý tưởng hay nhưng tiêu chí định lượng bài "thực chiến" khó đánh giá ground truth |
-| 9 | Hoàng Phong | Soạn thảo biên bản họp và phân chia công việc cho Câu lạc bộ sinh viên | Ban chủ nhiệm CLB | Vừa điều phối vừa ghi chép, biên bản hay bị thiếu người nhận việc | Tần suất thấp (chỉ họp 1 lần/tuần), không cấp bách bằng việc học hàng ngày |
-| 10 | Hoàng Phong | Tìm kiếm và gợi ý paper học thuật phù hợp cho đề tài nghiên cứu tốt nghiệp | Sinh viên làm khóa luận | Đọc lướt hàng chục bài báo tiếng Anh nhưng độ liên quan thấp | Bài toán quá rộng, khó đánh giá độ chính xác (Ground Truth) trong buổi lab |
+| 9 | Nguyễn Đình Tuấn Anh | Bị miss deadline và thông báo quan trọng do phân tán nhiều kênh (Discord, Teams, Canvas, Outlook, Zalo) của khóa học VinUni AI | Học viên khóa AI VinUni | Lội tin nhắn thủ công trên 4-5 kênh, mất 40-50'/tuần; từng trễ nộp quiz | Cực kỳ đồng cảm, hoàn toàn trùng khớp với Candidate 1 của Dương, gom chung vào Cụm A |
+| 10 | Hoàng Phong | Soạn thảo biên bản họp và phân chia công việc cho Câu lạc bộ sinh viên | Ban chủ nhiệm CLB | Vừa điều phối vừa ghi chép, biên bản hay bị thiếu người nhận việc | Tần suất thấp (chỉ họp 1 lần/tuần), không cấp bách bằng việc học hàng ngày |
+| 11 | Hoàng Phong | Tìm kiếm và gợi ý paper học thuật phù hợp cho đề tài nghiên cứu tốt nghiệp | Sinh viên làm khóa luận | Đọc lướt hàng chục bài báo tiếng Anh nhưng độ liên quan thấp | Bài toán quá rộng, khó đánh giá độ chính xác (Ground Truth) trong buổi lab |
+| 12 | Hoàng Phong | Đối chiếu bảng tiêu chí chấm điểm (Rubric) với nội dung bài làm trước khi nộp | Sinh viên làm bài lab / assignment | Mất 30-40' dò thủ công từng mục giữa đề PDF và bài làm | Pain thật nhưng tần suất chỉ xuất hiện lúc nộp bài cuối tuần |
 
 ### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A. Quản lý & Lọc thông báo đa kênh | #1, #5 | Tiếp nhận thông tin từ nhiều nguồn rời rạc, cần lọc ra thông tin quan trọng có chứa hành động cần làm | Pain point xảy ra hàng ngày, tần suất cao nhất, ảnh hưởng diện rộng |
-| B. Trích xuất Action Items cuộc họp | #2, #9 | Chuyển đổi dữ liệu âm thanh/hội thoại trao đổi tự do thành biên bản có cấu trúc và phân công nhiệm vụ | Có bottleneck rõ ràng, dễ đo lường bằng thời gian soạn thảo |
-| C. Tóm tắt & Tra cứu tài liệu học tập | #3, #4, #8, #10 | Tìm kiếm ngữ nghĩa và cô đọng tài liệu dài (slide, paper, chat history, tin tức AI) thành kiến thức ngắn gọn | Cần AI đọc hiểu tốt, nhưng rủi ro hallucination cần kiểm soát kỹ |
-| D. Quản lý chi tiêu & Code Review | #6, #7 | Xử lý dữ liệu kỹ thuật và đối soát dữ liệu giao dịch tài chính cá nhân | Workflow rõ ràng nhưng mang tính cá nhân hoặc phụ thuộc công cụ ngoài |
+| A. Quản lý & Lọc thông báo đa kênh | #1, #5, #9 | Tiếp nhận thông tin từ nhiều nguồn rời rạc, cần lọc ra thông tin quan trọng có chứa hành động cần làm | Pain point xảy ra hàng ngày, tần suất cao nhất, ảnh hưởng diện rộng |
+| B. Trích xuất Action Items cuộc họp | #2, #10 | Chuyển đổi dữ liệu âm thanh/hội thoại trao đổi tự do thành biên bản có cấu trúc và phân công nhiệm vụ | Có bottleneck rõ ràng, dễ đo lường bằng thời gian soạn thảo |
+| C. Tóm tắt & Tra cứu tài liệu học tập | #3, #4, #8, #11 | Tìm kiếm ngữ nghĩa và cô đọng tài liệu dài (slide, paper, chat history, tin tức AI) thành kiến thức ngắn gọn | Cần AI đọc hiểu tốt, nhưng rủi ro hallucination cần kiểm soát kỹ |
+| D. Quản lý chi tiêu & Code/Rubric Review | #6, #7, #12 | Xử lý dữ liệu kỹ thuật, đối soát tài chính cá nhân và kiểm tra tiêu chí nộp bài | Workflow rõ ràng nhưng mang tính cá nhân hoặc phụ thuộc công cụ ngoài |
 
 ### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
 
