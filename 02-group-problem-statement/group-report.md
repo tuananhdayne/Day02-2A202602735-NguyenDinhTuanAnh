@@ -28,8 +28,8 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 | 4 | Đỗ Mạnh Nghĩa | Khó tìm kiếm lại các quyết định kỹ thuật cũ bị trôi trên Slack/Discord | Developer trong dự án, học viên | Thanh search của chat chỉ khớp keyword cứng, không hiểu ngữ cảnh | Pain thật nhưng việc lấy quyền truy cập dữ liệu chat cũ khá phức tạp |
 | 5 | Đỗ Mạnh Nghĩa | Hay quên deadline nộp bài tập lab do không có hệ thống nhắc việc tự động | Học viên hay bị phân tâm | Phải tự ghi chép thủ công vào lịch cá nhân, hay bị sót | Rule đơn giản (Google Calendar) có thể giải quyết được 80% |
 | 6 | Đỗ Mạnh Nghĩa | Review và tóm tắt Pull Request dài trên GitHub khi làm bài tập nhóm | Học viên review code, team lead | Đọc từng file code diff để hiểu toàn bộ thay đổi của thành viên | Bài tập Day 2 và các lab đầu khóa chủ yếu là Markdown, chưa nhiều code diff |
-| 7 | Nguyễn Đình Tuấn Anh | Tổng hợp Weekly Report tiến độ đồ án từ Git commit log và board Trello | Sinh viên năm cuối làm đồ án | Viết narrative kết nối các commit kỹ thuật thành báo cáo học thuật | Workflow rất chuẩn, nhưng hơi trùng lặp với ví dụ mẫu trong Worksheet |
-| 8 | Nguyễn Đình Tuấn Anh | Hòm thư sinh viên bị quá tải bởi các email thông báo spam từ trường học | Sinh viên đại học | Mất thời gian đọc tiêu đề để lọc xem email nào thực sự cần xử lý | Tính năng Filter & Tag có sẵn của Gmail đã giải quyết tương đối tốt |
+| 7 | Nguyễn Đình Tuấn Anh | Quản lý, phân loại và đối soát chi tiêu cá nhân từ 3 app ngân hàng (MBBank, Techcombank, Vietcombank) | Sinh viên ở cùng gia đình, tự quản lý chi tiêu | Nhập liệu thủ công từng dòng giao dịch nhỏ từ 3 app vào Notion/Sheets mất 30-35'/tuần | Nỗi đau rất thật, workflow rõ ràng nhưng mang tính cá nhân |
+| 8 | Nguyễn Đình Tuấn Anh | Thu thập, lọc và tóm tắt tin tức công nghệ AI từ Facebook và TikTok để theo dõi xu hướng thực chiến | Sinh viên năm cuối, người học AI | Mất 35'/lần đọc thẩm định để lọc bỏ clip giật tít 30s tìm code/repo thật | Ý tưởng hay nhưng tiêu chí định lượng bài "thực chiến" khó đánh giá ground truth |
 | 9 | Hoàng Phong | Soạn thảo biên bản họp và phân chia công việc cho Câu lạc bộ sinh viên | Ban chủ nhiệm CLB | Vừa điều phối vừa ghi chép, biên bản hay bị thiếu người nhận việc | Tần suất thấp (chỉ họp 1 lần/tuần), không cấp bách bằng việc học hàng ngày |
 | 10 | Hoàng Phong | Tìm kiếm và gợi ý paper học thuật phù hợp cho đề tài nghiên cứu tốt nghiệp | Sinh viên làm khóa luận | Đọc lướt hàng chục bài báo tiếng Anh nhưng độ liên quan thấp | Bài toán quá rộng, khó đánh giá độ chính xác (Ground Truth) trong buổi lab |
 
@@ -37,10 +37,10 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A. Quản lý & Lọc thông báo đa kênh | #1, #5, #8 | Tiếp nhận thông tin từ nhiều nguồn rời rạc, cần lọc ra thông tin quan trọng có chứa hành động cần làm | Pain point xảy ra hàng ngày, tần suất cao nhất, ảnh hưởng diện rộng |
+| A. Quản lý & Lọc thông báo đa kênh | #1, #5 | Tiếp nhận thông tin từ nhiều nguồn rời rạc, cần lọc ra thông tin quan trọng có chứa hành động cần làm | Pain point xảy ra hàng ngày, tần suất cao nhất, ảnh hưởng diện rộng |
 | B. Trích xuất Action Items cuộc họp | #2, #9 | Chuyển đổi dữ liệu âm thanh/hội thoại trao đổi tự do thành biên bản có cấu trúc và phân công nhiệm vụ | Có bottleneck rõ ràng, dễ đo lường bằng thời gian soạn thảo |
-| C. Tóm tắt & Tra cứu tài liệu học tập | #3, #4, #10 | Tìm kiếm ngữ nghĩa và cô đọng tài liệu dài (slide, paper, chat history) thành kiến thức ngắn gọn | Cần AI đọc hiểu tốt, nhưng rủi ro hallucination cần kiểm soát kỹ |
-| D. Báo cáo tiến độ & Code Review | #6, #7 | Tổng hợp dữ liệu kỹ thuật (Git, Trello, PR) thành văn bản tóm tắt cho người khác review | Workflow rõ ràng nhưng hơi phụ thuộc vào công cụ của bên thứ ba |
+| C. Tóm tắt & Tra cứu tài liệu học tập | #3, #4, #8, #10 | Tìm kiếm ngữ nghĩa và cô đọng tài liệu dài (slide, paper, chat history, tin tức AI) thành kiến thức ngắn gọn | Cần AI đọc hiểu tốt, nhưng rủi ro hallucination cần kiểm soát kỹ |
+| D. Quản lý chi tiêu & Code Review | #6, #7 | Xử lý dữ liệu kỹ thuật và đối soát dữ liệu giao dịch tài chính cá nhân | Workflow rõ ràng nhưng mang tính cá nhân hoặc phụ thuộc công cụ ngoài |
 
 ### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
 
@@ -48,7 +48,7 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 |---|---|---|
 | **Candidate 1: Miss thông báo quan trọng trên Discord/Email/GitHub** (Đề xuất bởi C.T.Dương) | 1. Actor cực kỳ rõ và có sẵn ngay tại lớp (gần 1000 học viên).<br>2. Pain point diễn ra đều đặn 3 lần/ngày; đo được chính xác bằng phút (20-30') và số lần miss deadline.<br>3. Kiểm chứng được ngay lập tức bằng khảo sát thật tại lớp. | Phạm vi tích hợp API đa nền tảng có thể bị phình to nếu không giới hạn rõ boundary ở mức AI Workflow xử lý text nguồn. |
 | **Candidate 2: Trích xuất Action Items sau họp Google Meet đồ án** (Đề xuất bởi C.T.Dương) | 1. Workflow lặp lại hàng tuần (2-3 lần), bottleneck rất rõ ở khâu nghe lại audio.<br>2. Giảm trực tiếp thời gian soạn biên bản từ 30' xuống dưới 5'. | Độ chính xác của transcript tiếng Việt cho các thuật ngữ chuyên ngành mật mã/CNTT chưa chắc chắn. |
-| **Candidate 7: Tổng hợp Weekly Report đồ án từ Git/Trello** (Đề xuất bởi N.Đ.Tuấn Anh) | 1. Workflow kinh điển, dữ liệu đầu vào có cấu trúc rõ (Git commits, Trello cards).<br>2. Đo lường được bằng thời gian hoàn thành báo cáo. | Quá giống với bài Worked Example mẫu trong Worksheet; cả nhóm muốn giải một bài toán mới và sát sườn hơn. |
+| **Candidate 7: Quản lý, phân loại và đối soát chi tiêu từ 3 app ngân hàng** (Đề xuất bởi N.Đ.Tuấn Anh) | 1. Workflow bóc tách 5 bước rất rõ ràng, dữ liệu biến động số dư có cấu trúc thời gian và số tiền cụ thể.<br>2. Đo lường được chính xác bằng thời gian hoàn thành (giảm từ 60' xuống 7'/tuần).<br>3. Dữ liệu text/ảnh giao dịch rất phù hợp với AI OCR và classification. | Mang tính tài chính cá nhân riêng tư, không giải quyết bài toán chung của cả lớp khóa học VinUni AI; rào cản bảo mật khi đưa dữ liệu ngân hàng vào mô hình. |
 
 ### 3.4. Score để đồng thuận (chấm 1-5, ép nói rõ vì sao cho 5 / cho 3)
 
@@ -56,7 +56,7 @@ Tự động tổng hợp, phân loại mức độ ưu tiên và trích xuất 
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | **Candidate 1 (Miss thông báo đa kênh)** | 5 | 5 | 5 | 5 | 5 | 5 | 5 | **35** |
 | **Candidate 2 (Action Items họp Meet)** | 5 | 4 | 4 | 4 | 4 | 4 | 4 | **29** |
-| **Candidate 7 (Weekly Report đồ án)** | 4 | 4 | 4 | 4 | 4 | 4 | 3 | **27** |
+| **Candidate 7 (Quản lý chi tiêu 3 ngân hàng)** | 5 | 5 | 5 | 4 | 4 | 4 | 3 | **30** |
 
 **Candidate nhóm chọn (1 bài duy nhất):**
 
@@ -74,7 +74,7 @@ Bài toán đạt điểm tối đa (35/35) trên cả 7 tiêu chí đánh giá 
 
 ```text
 - Không chọn Candidate 2 (Action Items họp Meet): Mặc dù pain point có thật, nhưng việc kiểm chứng phụ thuộc vào lịch họp đột xuất của nhóm KMA vào buổi tối, không thể kiểm chứng trực tiếp ngay trên lớp học; đồng thời phụ thuộc nhiều vào chất lượng công cụ Speech-to-Text bên ngoài.
-- Không chọn Candidate 7 (Weekly Report đồ án): Bài toán này có cấu trúc tương tự 90% với Worked Example trong tài liệu hướng dẫn, nếu chọn sẽ làm giảm tính sáng tạo và không mang lại giá trị giải quyết bức xúc thực tế hàng ngày cho cả nhóm trong khóa học hiện tại.
+- Không chọn Candidate 7 (Quản lý chi tiêu từ 3 ngân hàng): Mặc dù quy trình bóc tách biến động số dư và gán danh mục có số liệu đo lường rất cụ thể, nhưng bài toán này mang tính riêng tư cá nhân, dữ liệu tài chính nhạy cảm khó kiểm chứng công khai trong lớp học, và không giải quyết trực tiếp bức xúc cấp bách hàng ngày cho tập thể học viên khóa học VinUni AI như Candidate 1.
 ```
 
 **Disagreement (nếu có — ai lo gì, chốt ra sao):**
