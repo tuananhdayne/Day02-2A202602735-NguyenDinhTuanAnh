@@ -9,7 +9,7 @@
 - Vai trò / bối cảnh: Sinh viên năm 5 Học viện Kỹ thuật Mật mã (KMA), đồng thời là học viên chương trình đào tạo AI tại VinUni (VinUni AI20k).
 - Công việc hằng tuần:
   1. Hoàn thành các môn chuyên ngành / đồ án năm cuối tại KMA, kết hợp tham gia các buổi học lý thuyết và lab thực hành AI chuyên sâu tại VinUni (3-4 buổi/tuần).
-  2. Theo dõi thông báo bài tập, deadline dồn dập của khóa học AI tại VinUni trên các kênh phân tán: Canvas LMS, Microsoft Teams, Discord môn học, Outlook và Zalo nhóm.
+  2. Theo dõi thông báo bài tập, deadline dồn dập của khóa học AI tại VinUni trên các kênh phân tán: Microsoft Teams, Discord môn học, Outlook và Zalo nhóm.
   3. Họp nhóm đồ án môn học tại VinUni, phân chia công việc và theo dõi tiến độ hoàn thành (1-2 buổi/tuần).
   4. Đọc tài liệu công nghệ, paper AI (ArXiv), theo dõi xu hướng mô hình mới và công cụ lập trình phục vụ học tập, nghiên cứu.
   5. Quản lý chi tiêu sinh hoạt cá nhân và rà soát email học tập/công việc hằng ngày.
@@ -22,7 +22,7 @@
 
 | # | Lăng kính (Lặp lại / Tốn thời gian / AI có thể tốt hơn / Pain từ người khác) | Problem quan sát được | Ai chịu ảnh hưởng? | Dấu hiệu thật (số + bằng chứng) |
 |---|---|---|---|---|
-| 1 | Lặp lại | Tổng hợp thông báo & deadline bài tập phân tán từ các kênh của khóa học VinUni AI (Canvas, Teams, Discord, Outlook, Zalo) | Học viên tham gia khóa học AI tại VinUni | Mất 40-50 phút mỗi đầu tuần; bấm giờ 3 tuần liên tiếp mất trung bình 45 phút/tuần; từng bị trễ 1 bài quiz 5% do deadline bị trôi trong channel chat Discord. |
+| 1 | Lặp lại | Tổng hợp thông báo & deadline bài tập phân tán từ các kênh của khóa học VinUni AI (Teams, Discord, Outlook, Zalo) | Học viên tham gia khóa học AI tại VinUni | Mất 40-50 phút mỗi đầu tuần; bấm giờ 3 tuần liên tiếp mất trung bình 45 phút/tuần; từng bị trễ 1 bài quiz 5% do deadline bị trôi trong channel chat Discord. |
 | 2 | Lặp lại | Quản lý, phân loại và đối soát chi tiêu cá nhân phân tán giữa 3 app ngân hàng (MBBank, Techcombank, Vietcombank) | Sinh viên ở cùng gia đình, tự quản lý các khoản chi tiêu cá nhân | Mất 60-75 phút vào cuối tuần/tháng để kiểm tra lịch sử 3 app ngân hàng; ghi chép lắt nhắt ~30 giao dịch/tuần (tiền ăn trưa, cà phê học bài, xăng xe, mua tài liệu); hay bỏ cuộc sau vài ngày ghi chép thủ công. |
 | 3 | Tốn thời gian | Dọn dẹp, phân loại hàng trăm email rác/quảng cáo để tìm email công việc và học tập thực sự quan trọng bị lấp | Sinh viên, người đi làm | Mất khoảng 15 phút mỗi sáng rà soát hòm thư (~105 phút/tuần); nhận trung bình 25-30 email/ngày nhưng chỉ có 2-3 email quan trọng; từng suýt lỡ hạn xác nhận học bổng do mail trôi vào tab Promotions. |
 | 4 | Pain từ người khác | Lên lịch trình ăn uống, tụ tập cho nhóm bạn bị bế tắc do ý kiến phân tán ("ăn gì cũng được" nhưng gợi ý đâu chê đó) | Nhóm bạn sinh viên (4-6 người), người chủ trì lên kèo | Mất 40-60 phút lướt TikTok/Google Maps mỗi lần rủ đi ăn (1-2 lần/tuần); nhắn tin qua lại 15-20 lượt vẫn chưa chốt được quán vì người chê xa, người chê đắt. |
@@ -55,7 +55,7 @@ Giữ bài nào: actor cụ thể, workflow vẽ được 3-7 bước, bottlenec
 
 | Rank | Problem (copy từ bảng scan) | Vì sao chọn (2-3 ý) | Điều còn chưa chắc |
 |---|---|---|---|
-| 1 | Problem 1: Tổng hợp thông báo & deadline bài tập phân tán từ các kênh của khóa học VinUni AI (Canvas, Teams, Discord, Outlook, Zalo) | 1. Actor rất cụ thể (học viên khóa học AI tại VinUni), workflow diễn ra đều đặn hàng tuần.<br>2. Bottleneck rõ: đọc quét lọc tin nhắn TA trên Discord và Zalo nhóm tốn nhiều thời gian nhất.<br>3. Impact đo lường được: tiết kiệm 35 phút/tuần, triệt tiêu nguy cơ trễ hạn nộp bài. | Cách gom dữ liệu từ các nền tảng đóng (như nhóm Zalo riêng) mà không vi phạm chính sách API hoặc bảo mật thông tin cá nhân. |
+| 1 | Problem 1: Tổng hợp thông báo & deadline bài tập phân tán từ các kênh của khóa học VinUni AI (Teams, Discord, Outlook, Zalo) | 1. Actor rất cụ thể (học viên khóa học AI tại VinUni), workflow diễn ra đều đặn hàng tuần.<br>2. Bottleneck rõ: đọc quét lọc tin nhắn TA trên Discord và Zalo nhóm tốn nhiều thời gian nhất.<br>3. Impact đo lường được: tiết kiệm 35 phút/tuần, triệt tiêu nguy cơ trễ hạn nộp bài. | Cách gom dữ liệu từ các nền tảng đóng (như nhóm Zalo riêng) mà không vi phạm chính sách API hoặc bảo mật thông tin cá nhân. |
 | 2 | Problem 2: Quản lý, phân loại và đối soát chi tiêu cá nhân từ 3 app ngân hàng (MBBank, Techcombank, Vietcombank) | 1. Nỗi đau thật khi dùng song song 3 tài khoản ngân hàng khác nhau.<br>2. Bottleneck nhập liệu và gán nhãn lắt nhắt khiến sinh viên nản lòng sau 1-2 tuần.<br>3. Dữ liệu biến động số dư dạng text/ảnh chụp màn hình rất phù hợp để AI OCR và phân loại. | Khả năng phân loại chính xác các giao dịch có nội dung chuyển khoản mập mờ hoặc viết tắt; độ tin cậy về quyền riêng tư tài chính. |
 | 3 | Problem 5: Thu thập, lọc và tóm tắt tin tức công nghệ AI từ Facebook và TikTok để theo dõi xu hướng thực chiến | 1. Thói quen đọc tin hàng ngày trên mạng xã hội nhưng bị ngợp bởi video/bài viết giật tít 30s.<br>2. Tận dụng AI để tóm tắt các bài viết dài, chắt lọc code/repo thực chiến.<br>3. Giảm thiểu hội chứng FOMO và tiết kiệm thời gian lướt mạng xã hội vô bổ. | Tiêu chí định lượng bài viết thế nào là "thực chiến" cần prompt rõ; cần lưu đường link gốc để sinh viên tự kiểm chứng. |
 
@@ -67,7 +67,7 @@ Giữ bài nào: actor cụ thể, workflow vẽ được 3-7 bước, bottlenec
 
 ```text
 Problem 1 câu:
-Mỗi đầu tuần, học viên khóa học AI tại VinUni mất khoảng 45 phút mở và rà soát thủ công 5 kênh liên lạc của khóa học (Canvas LMS, Microsoft Teams, Discord môn học, Outlook, Zalo nhóm) để nhặt ra các deadline bài tập và thông báo quan trọng, trong đó bước đọc quét các đoạn chat dài trên Discord/Zalo tốn thời gian nhất và vẫn có nguy cơ bỏ sót task.
+Mỗi đầu tuần, học viên khóa học AI tại VinUni mất khoảng 45 phút mở và rà soát thủ công 4 kênh liên lạc của khóa học (Microsoft Teams, Discord môn học, Outlook, Zalo nhóm) để nhặt ra các deadline bài tập và thông báo quan trọng, trong đó bước đọc quét các đoạn chat dài trên Discord/Zalo tốn thời gian nhất và vẫn có nguy cơ bỏ sót task.
 
 Actor:
 Học viên tham gia chương trình đào tạo AI tại VinUni (VinUni AI20k), phải theo sát lượng kiến thức dồn dập, nhiều bài lab hands-on và các thông báo cập nhật liên tục từ giảng viên/TA.
@@ -76,12 +76,11 @@ Thời điểm / bối cảnh:
 Sáng thứ Hai hàng tuần hoặc trước mỗi tuần học mới khi lập kế hoạch làm lab, học lý thuyết và làm bài tập lớn tại VinUni.
 
 Current workflow 3-7 bước:
-1. Mở Canvas LMS kiểm tra danh sách To-do, hạn nộp lab và mục Announcement của khóa học (7 phút).
-2. Mở Discord môn học VinUni, lướt các channel #announcement, #lab-discussion để tìm cập nhật đề bài và giải đáp từ TA (15 phút).
-3. Mở Zalo nhóm đồ án môn học xem tin nhắn bàn giao task và lịch họp nhóm (10 phút).
-4. Mở Microsoft Teams và hòm thư Outlook kiểm tra email thông báo học vụ, lịch seminar/mentor (5 phút).
-5. Đọc quét nội dung, lọc ra thông tin quan trọng và tự gõ deadline vào Google Calendar / sổ tay (6 phút).
-6. Rà soát chéo lại xem có trùng lịch thi hoặc thiếu bài nộp nào không (2 phút).
+1. Mở Discord môn học VinUni, lướt các channel #announcement, #lab-discussion để tìm cập nhật đề bài và giải đáp từ TA (15 phút).
+2. Mở Zalo nhóm đồ án môn học xem tin nhắn bàn giao task và lịch họp nhóm (10 phút).
+3. Mở Microsoft Teams và hòm thư Outlook kiểm tra email thông báo học vụ, lịch seminar/mentor (5 phút).
+4. Đọc quét nội dung, lọc ra thông tin quan trọng và tự gõ deadline vào Google Calendar / sổ tay (6 phút).
+5. Rà soát chéo lại xem có trùng lịch thi hoặc thiếu bài nộp nào không (2 phút).
 
 Bottleneck:
 Bước 2 & Bước 3: Đọc quét thủ công các đoạn chat dài và tin nhắn thảo luận trên Discord/Zalo để tìm deadline/nhiệm vụ ẩn trong văn bản tự do (mất ~20-25 phút).
@@ -111,7 +110,7 @@ Quick gut:
 ```text
 CURRENT STATE — 45 phút
 
-[1 Check Canvas LMS: 7']
+[1 Check Discord: 15']
 → [2 Check Discord VinUni (#announcement, #lab): 15']  <-- bottleneck
 → [3 Đọc Zalo nhóm đồ án khóa học: 10']                <-- bottleneck
 → [4 Check Teams & Outlook mail: 5']
